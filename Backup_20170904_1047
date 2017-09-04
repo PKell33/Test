@@ -9,6 +9,9 @@ VERSION : 0.1
    C8_WBFPLVL : BOOL ;	//Fish Pass Water Level in the top 10m of the Fish Pass Wire Break
    C8_WBFPWG_POS : BOOL ;	//Fish Pass Weir Gate Position for Angular Transmitter Wire Break
 	<DeleteStart>
+	Addition1
+	Addition2
+	Addition3
 	<DeleteEnd>
   END_STRUCT ;	
 BEGIN
@@ -16,6 +19,7 @@ BEGIN
    C8_WBFPLVL := FALSE; 
    C8_WBFPWG_POS := FALSE; 
    IW134 := FALSE; 
+   Addition4
    IW136 := TRUE; 
    IW138 := TRUE; 
    IW140 := TRUE; 
