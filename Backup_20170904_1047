@@ -1,0 +1,3907 @@
+DATA_BLOCK "WBI"
+TITLE =	
+NAME : WBI
+VERSION : 0.1
+
+
+  STRUCT 	
+   IW128 : BOOL ;	//Spare Wire Break
+   C8_WBFPLVL : BOOL ;	//Fish Pass Water Level in the top 10m of the Fish Pass Wire Break
+   C8_WBFPWG_POS : BOOL ;	//Fish Pass Weir Gate Position for Angular Transmitter Wire Break
+   IW134 : BOOL ;	//Spare Wire Break
+   IW136 : BOOL ;	//Spare Wire Break
+   IW138 : BOOL ;	//Spare Wire Break
+   IW140 : BOOL ;	//Spare Wire Break
+   IW142 : BOOL ;	//Spare Wire Break
+  END_STRUCT ;	
+BEGIN
+   IW128 := FALSE; 
+   C8_WBFPLVL := FALSE; 
+   C8_WBFPWG_POS := FALSE; 
+   IW134 := FALSE; 
+   IW136 := TRUE; 
+   IW138 := TRUE; 
+   IW140 := TRUE; 
+   IW142 := TRUE; 
+END_DATA_BLOCK
+
+DATA_BLOCK "ORI"
+TITLE =	
+NAME : ORI
+VERSION : 0.1
+
+
+  STRUCT 	
+   IW128 : BOOL ;	//Spare Over Range
+   C8_ORFPLVL : BOOL ;	//Fish Pass Water Level in the top 10m of the Fish Pass Over Range
+   C8_ORFPWG_POS : BOOL ;	//Fish Pass Weir Gate Position for Angular Transmitter Over Range
+   IW134 : BOOL ;	//Spare Over Range
+   IW136 : BOOL ;	//Spare Over Range
+   IW138 : BOOL ;	//Spare Over Range
+   IW140 : BOOL ;	//Spare Over Range
+   IW142 : BOOL ;	//Spare Over Range
+  END_STRUCT ;	
+BEGIN
+   IW128 := TRUE; 
+   C8_ORFPLVL := FALSE; 
+   C8_ORFPWG_POS := FALSE; 
+   IW134 := FALSE; 
+   IW136 := FALSE; 
+   IW138 := FALSE; 
+   IW140 := FALSE; 
+   IW142 := FALSE; 
+END_DATA_BLOCK
+
+DATA_BLOCK "RACK FAULT ALARMS"
+TITLE =	
+NAME : RCKFLT
+VERSION : 0.1
+
+
+  STRUCT 	
+   MasterDP1 : BOOL ;	//Fault DP MASTER 1
+   CPU_Slot1 : BOOL ;	//Fault Rack CPU 1 Slot 1
+   CPU_Slot2 : BOOL ;	//Fault Rack CPU 1 Slot 2
+   CPU_Slot3 : BOOL ;	//Fault Rack CPU 1 Slot 3
+   CPU_Slot4 : BOOL ;	//Fault Rack CPU 1 Slot 4
+   CPU_Slot5 : BOOL ;	//Fault Rack CPU 1 Slot 5
+   CPU_Slot6 : BOOL ;	//Fault Rack CPU 1 Slot 6
+   CPU_Slot7 : BOOL ;	//Fault Rack CPU 1 Slot 7
+   CPU_Slot8 : BOOL ;	//Fault Rack CPU 1 Slot 8
+   CPU_Slot9 : BOOL ;	//Fault Rack CPU 1 Slot 9
+   CPU_Slot10 : BOOL ;	//Fault Rack CPU 1 Slot 10
+   CPU_Slot11 : BOOL ;	//Fault Rack CPU 1 Slot 11
+   CPU_Slot12 : BOOL ;	//Fault Rack CPU 1 Slot 12
+   CPU_Slot13 : BOOL ;	//Fault Rack CPU 1 Slot 13
+   CPU_Slot14 : BOOL ;	//Fault Rack CPU 1 Slot 14
+   CPU_Slot15 : BOOL ;	//Fault Rack CPU 1 Slot 15
+   Bus1_SlaveDP2 : BOOL ;	//Fault Rack Module DP2
+   Bus1_SlaveDP2_Slot1 : BOOL ;	//Fault Rack Module DP2 Slot 1
+   Bus1_SlaveDP2_Slot2 : BOOL ;	//Fault Rack Module DP2 Slot 2
+   Bus1_SlaveDP2_Slot3 : BOOL ;	//Fault Rack Module DP2 Slot 3
+   Bus1_SlaveDP2_Slot4 : BOOL ;	//Fault Rack Module DP2 Slot 4
+   Bus1_SlaveDP2_Slot5 : BOOL ;	//Fault Rack Module DP2 Slot 5
+   Bus1_SlaveDP2_Slot6 : BOOL ;	//Fault Rack Module DP2 Slot 6
+   Bus1_SlaveDP2_Slot7 : BOOL ;	//Fault Rack Module DP2 Slot 7
+   Bus1_SlaveDP2_Slot8 : BOOL ;	//Fault Rack Module DP2 Slot 8
+   Bus1_SlaveDP2_Slot9 : BOOL ;	//Fault Rack Module DP2 Slot 9
+   Bus1_SlaveDP2_Slot10 : BOOL ;	//Fault Rack Module DP2 Slot 10
+   Bus1_SlaveDP2_Slot11 : BOOL ;	//Fault Rack Module DP2 Slot 11
+   Bus1_SlaveDP2_Slot12 : BOOL ;	//Fault Rack Module DP2 Slot 12
+   Bus1_SlaveDP2_Slot13 : BOOL ;	//Fault Rack Module DP2 Slot 13
+   Bus1_SlaveDP2_Slot14 : BOOL ;	//Fault Rack Module DP2 Slot 14
+   Bus1_SlaveDP2_Slot15 : BOOL ;	//Fault Rack Module DP2 Slot 15
+   Bus1_SlaveDP3 : BOOL ;	//Fault Rack Module DP3
+   Bus1_SlaveDP3_Slot1 : BOOL ;	//Fault Rack Module DP3 Slot 1
+   Bus1_SlaveDP3_Slot2 : BOOL ;	//Fault Rack Module DP3 Slot 2
+   Bus1_SlaveDP3_Slot3 : BOOL ;	//Fault Rack Module DP3 Slot 3
+   Bus1_SlaveDP3_Slot4 : BOOL ;	//Fault Rack Module DP3 Slot 4
+   Bus1_SlaveDP3_Slot5 : BOOL ;	//Fault Rack Module DP3 Slot 5
+   Bus1_SlaveDP3_Slot6 : BOOL ;	//Fault Rack Module DP3 Slot 6
+   Bus1_SlaveDP3_Slot7 : BOOL ;	//Fault Rack Module DP3 Slot 7
+   Bus1_SlaveDP3_Slot8 : BOOL ;	//Fault Rack Module DP3 Slot 8
+   Bus1_SlaveDP3_Slot9 : BOOL ;	//Fault Rack Module DP3 Slot 9
+   Bus1_SlaveDP3_Slot10 : BOOL ;	//Fault Rack Module DP3 Slot 10
+   Bus1_SlaveDP3_Slot11 : BOOL ;	//Fault Rack Module DP3 Slot 11
+   Bus1_SlaveDP3_Slot12 : BOOL ;	//Fault Rack Module DP3 Slot 12
+   Bus1_SlaveDP3_Slot13 : BOOL ;	//Fault Rack Module DP3 Slot 13
+   Bus1_SlaveDP3_Slot14 : BOOL ;	//Fault Rack Module DP3 Slot 14
+   Bus1_SlaveDP3_Slot15 : BOOL ;	//Fault Rack Module DP3 Slot 15
+   Bus1_SlaveDP4 : BOOL ;	//Fault Rack Module DP4
+   Bus1_SlaveDP4_Slot1 : BOOL ;	//Fault Rack Module DP4 Slot 1
+   Bus1_SlaveDP4_Slot2 : BOOL ;	//Fault Rack Module DP4 Slot 2
+   Bus1_SlaveDP4_Slot3 : BOOL ;	//Fault Rack Module DP4 Slot 3
+   Bus1_SlaveDP4_Slot4 : BOOL ;	//Fault Rack Module DP4 Slot 4
+   Bus1_SlaveDP4_Slot5 : BOOL ;	//Fault Rack Module DP4 Slot 5
+   Bus1_SlaveDP4_Slot6 : BOOL ;	//Fault Rack Module DP4 Slot 6
+   Bus1_SlaveDP4_Slot7 : BOOL ;	//Fault Rack Module DP4 Slot 7
+   Bus1_SlaveDP4_Slot8 : BOOL ;	//Fault Rack Module DP4 Slot 8
+   Bus1_SlaveDP4_Slot9 : BOOL ;	//Fault Rack Module DP4 Slot 9
+   Bus1_SlaveDP4_Slot10 : BOOL ;	//Fault Rack Module DP4 Slot 10
+   Bus1_SlaveDP4_Slot11 : BOOL ;	//Fault Rack Module DP4 Slot 11
+   Bus1_SlaveDP4_Slot12 : BOOL ;	//Fault Rack Module DP4 Slot 12
+   Bus1_SlaveDP4_Slot13 : BOOL ;	//Fault Rack Module DP4 Slot 13
+   Bus1_SlaveDP4_Slot14 : BOOL ;	//Fault Rack Module DP4 Slot 14
+   Bus1_SlaveDP4_Slot15 : BOOL ;	//Fault Rack Module DP4 Slot 15
+   Bus1_SlaveDP5 : BOOL ;	//Fault Rack Module DP5
+   Bus1_SlaveDP5_Slot1 : BOOL ;	//Fault Rack Module DP5 Slot 1
+   Bus1_SlaveDP5_Slot2 : BOOL ;	//Fault Rack Module DP5 Slot 2
+   Bus1_SlaveDP5_Slot3 : BOOL ;	//Fault Rack Module DP5 Slot 3
+   Bus1_SlaveDP5_Slot4 : BOOL ;	//Fault Rack Module DP5 Slot 4
+   Bus1_SlaveDP5_Slot5 : BOOL ;	//Fault Rack Module DP5 Slot 5
+   Bus1_SlaveDP5_Slot6 : BOOL ;	//Fault Rack Module DP5 Slot 6
+   Bus1_SlaveDP5_Slot7 : BOOL ;	//Fault Rack Module DP5 Slot 7
+   Bus1_SlaveDP5_Slot8 : BOOL ;	//Fault Rack Module DP5 Slot 8
+   Bus1_SlaveDP5_Slot9 : BOOL ;	//Fault Rack Module DP5 Slot 9
+   Bus1_SlaveDP5_Slot10 : BOOL ;	//Fault Rack Module DP5 Slot 10
+   Bus1_SlaveDP5_Slot11 : BOOL ;	//Fault Rack Module DP5 Slot 11
+   Bus1_SlaveDP5_Slot12 : BOOL ;	//Fault Rack Module DP5 Slot 12
+   Bus1_SlaveDP5_Slot13 : BOOL ;	//Fault Rack Module DP5 Slot 13
+   Bus1_SlaveDP5_Slot14 : BOOL ;	//Fault Rack Module DP5 Slot 14
+   Bus1_SlaveDP5_Slot15 : BOOL ;	//Fault Rack Module DP5 Slot 15
+   Bus1_SlaveDP6 : BOOL ;	//Fault Rack Module DP6
+   Bus1_SlaveDP6_Slot1 : BOOL ;	//Fault Rack Module DP6 Slot 1
+   Bus1_SlaveDP6_Slot2 : BOOL ;	//Fault Rack Module DP6 Slot 2
+   Bus1_SlaveDP6_Slot3 : BOOL ;	//Fault Rack Module DP6 Slot 3
+   Bus1_SlaveDP6_Slot4 : BOOL ;	//Fault Rack Module DP6 Slot 4
+   Bus1_SlaveDP6_Slot5 : BOOL ;	//Fault Rack Module DP6 Slot 5
+   Bus1_SlaveDP6_Slot6 : BOOL ;	//Fault Rack Module DP6 Slot 6
+   Bus1_SlaveDP6_Slot7 : BOOL ;	//Fault Rack Module DP6 Slot 7
+   Bus1_SlaveDP6_Slot8 : BOOL ;	//Fault Rack Module DP6 Slot 8
+   Bus1_SlaveDP6_Slot9 : BOOL ;	//Fault Rack Module DP6 Slot 9
+   Bus1_SlaveDP6_Slot10 : BOOL ;	//Fault Rack Module DP6 Slot 10
+   Bus1_SlaveDP6_Slot11 : BOOL ;	//Fault Rack Module DP6 Slot 11
+   Bus1_SlaveDP6_Slot12 : BOOL ;	//Fault Rack Module DP6 Slot 12
+   Bus1_SlaveDP6_Slot13 : BOOL ;	//Fault Rack Module DP6 Slot 13
+   Bus1_SlaveDP6_Slot14 : BOOL ;	//Fault Rack Module DP6 Slot 14
+   Bus1_SlaveDP6_Slot15 : BOOL ;	//Fault Rack Module DP6 Slot 15
+   Bus1_SlaveDP7 : BOOL ;	//Fault Rack Module DP7
+   Bus1_SlaveDP7_Slot1 : BOOL ;	//Fault Rack Module DP7 Slot 1
+   Bus1_SlaveDP7_Slot2 : BOOL ;	//Fault Rack Module DP7 Slot 2
+   Bus1_SlaveDP7_Slot3 : BOOL ;	//Fault Rack Module DP7 Slot 3
+   Bus1_SlaveDP7_Slot4 : BOOL ;	//Fault Rack Module DP7 Slot 4
+   Bus1_SlaveDP7_Slot5 : BOOL ;	//Fault Rack Module DP7 Slot 5
+   Bus1_SlaveDP7_Slot6 : BOOL ;	//Fault Rack Module DP7 Slot 6
+   Bus1_SlaveDP7_Slot7 : BOOL ;	//Fault Rack Module DP7 Slot 7
+   Bus1_SlaveDP7_Slot8 : BOOL ;	//Fault Rack Module DP7 Slot 8
+   Bus1_SlaveDP7_Slot9 : BOOL ;	//Fault Rack Module DP7 Slot 9
+   Bus1_SlaveDP7_Slot10 : BOOL ;	//Fault Rack Module DP7 Slot 10
+   Bus1_SlaveDP7_Slot11 : BOOL ;	//Fault Rack Module DP7 Slot 11
+   Bus1_SlaveDP7_Slot12 : BOOL ;	//Fault Rack Module DP7 Slot 12
+   Bus1_SlaveDP7_Slot13 : BOOL ;	//Fault Rack Module DP7 Slot 13
+   Bus1_SlaveDP7_Slot14 : BOOL ;	//Fault Rack Module DP7 Slot 14
+   Bus1_SlaveDP7_Slot15 : BOOL ;	//Fault Rack Module DP7 Slot 15
+   Bus1_SlaveDP8 : BOOL ;	//Fault Rack Module DP8
+   Bus1_SlaveDP8_Slot1 : BOOL ;	//Fault Rack Module DP8 Slot 1
+   Bus1_SlaveDP8_Slot2 : BOOL ;	//Fault Rack Module DP8 Slot 2
+   Bus1_SlaveDP8_Slot3 : BOOL ;	//Fault Rack Module DP8 Slot 3
+   Bus1_SlaveDP8_Slot4 : BOOL ;	//Fault Rack Module DP8 Slot 4
+   Bus1_SlaveDP8_Slot5 : BOOL ;	//Fault Rack Module DP8 Slot 5
+   Bus1_SlaveDP8_Slot6 : BOOL ;	//Fault Rack Module DP8 Slot 6
+   Bus1_SlaveDP8_Slot7 : BOOL ;	//Fault Rack Module DP8 Slot 7
+   Bus1_SlaveDP8_Slot8 : BOOL ;	//Fault Rack Module DP8 Slot 8
+   Bus1_SlaveDP8_Slot9 : BOOL ;	//Fault Rack Module DP8 Slot 9
+   Bus1_SlaveDP8_Slot10 : BOOL ;	//Fault Rack Module DP8 Slot 10
+   Bus1_SlaveDP8_Slot11 : BOOL ;	//Fault Rack Module DP8 Slot 11
+   Bus1_SlaveDP8_Slot12 : BOOL ;	//Fault Rack Module DP8 Slot 12
+   Bus1_SlaveDP8_Slot13 : BOOL ;	//Fault Rack Module DP8 Slot 13
+   Bus1_SlaveDP8_Slot14 : BOOL ;	//Fault Rack Module DP8 Slot 14
+   Bus1_SlaveDP8_Slot15 : BOOL ;	//Fault Rack Module DP8 Slot 15
+  END_STRUCT ;	
+BEGIN
+   MasterDP1 := FALSE; 
+   CPU_Slot1 := FALSE; 
+   CPU_Slot2 := FALSE; 
+   CPU_Slot3 := FALSE; 
+   CPU_Slot4 := FALSE; 
+   CPU_Slot5 := FALSE; 
+   CPU_Slot6 := FALSE; 
+   CPU_Slot7 := FALSE; 
+   CPU_Slot8 := FALSE; 
+   CPU_Slot9 := FALSE; 
+   CPU_Slot10 := FALSE; 
+   CPU_Slot11 := FALSE; 
+   CPU_Slot12 := FALSE; 
+   CPU_Slot13 := FALSE; 
+   CPU_Slot14 := FALSE; 
+   CPU_Slot15 := FALSE; 
+   Bus1_SlaveDP2 := FALSE; 
+   Bus1_SlaveDP2_Slot1 := FALSE; 
+   Bus1_SlaveDP2_Slot2 := FALSE; 
+   Bus1_SlaveDP2_Slot3 := FALSE; 
+   Bus1_SlaveDP2_Slot4 := FALSE; 
+   Bus1_SlaveDP2_Slot5 := FALSE; 
+   Bus1_SlaveDP2_Slot6 := FALSE; 
+   Bus1_SlaveDP2_Slot7 := FALSE; 
+   Bus1_SlaveDP2_Slot8 := FALSE; 
+   Bus1_SlaveDP2_Slot9 := FALSE; 
+   Bus1_SlaveDP2_Slot10 := FALSE; 
+   Bus1_SlaveDP2_Slot11 := FALSE; 
+   Bus1_SlaveDP2_Slot12 := FALSE; 
+   Bus1_SlaveDP2_Slot13 := FALSE; 
+   Bus1_SlaveDP2_Slot14 := FALSE; 
+   Bus1_SlaveDP2_Slot15 := FALSE; 
+   Bus1_SlaveDP3 := FALSE; 
+   Bus1_SlaveDP3_Slot1 := FALSE; 
+   Bus1_SlaveDP3_Slot2 := FALSE; 
+   Bus1_SlaveDP3_Slot3 := FALSE; 
+   Bus1_SlaveDP3_Slot4 := FALSE; 
+   Bus1_SlaveDP3_Slot5 := FALSE; 
+   Bus1_SlaveDP3_Slot6 := FALSE; 
+   Bus1_SlaveDP3_Slot7 := FALSE; 
+   Bus1_SlaveDP3_Slot8 := FALSE; 
+   Bus1_SlaveDP3_Slot9 := FALSE; 
+   Bus1_SlaveDP3_Slot10 := FALSE; 
+   Bus1_SlaveDP3_Slot11 := FALSE; 
+   Bus1_SlaveDP3_Slot12 := FALSE; 
+   Bus1_SlaveDP3_Slot13 := FALSE; 
+   Bus1_SlaveDP3_Slot14 := FALSE; 
+   Bus1_SlaveDP3_Slot15 := FALSE; 
+   Bus1_SlaveDP4 := FALSE; 
+   Bus1_SlaveDP4_Slot1 := FALSE; 
+   Bus1_SlaveDP4_Slot2 := FALSE; 
+   Bus1_SlaveDP4_Slot3 := FALSE; 
+   Bus1_SlaveDP4_Slot4 := FALSE; 
+   Bus1_SlaveDP4_Slot5 := FALSE; 
+   Bus1_SlaveDP4_Slot6 := FALSE; 
+   Bus1_SlaveDP4_Slot7 := FALSE; 
+   Bus1_SlaveDP4_Slot8 := FALSE; 
+   Bus1_SlaveDP4_Slot9 := FALSE; 
+   Bus1_SlaveDP4_Slot10 := FALSE; 
+   Bus1_SlaveDP4_Slot11 := FALSE; 
+   Bus1_SlaveDP4_Slot12 := FALSE; 
+   Bus1_SlaveDP4_Slot13 := FALSE; 
+   Bus1_SlaveDP4_Slot14 := FALSE; 
+   Bus1_SlaveDP4_Slot15 := FALSE; 
+   Bus1_SlaveDP5 := FALSE; 
+   Bus1_SlaveDP5_Slot1 := FALSE; 
+   Bus1_SlaveDP5_Slot2 := FALSE; 
+   Bus1_SlaveDP5_Slot3 := FALSE; 
+   Bus1_SlaveDP5_Slot4 := FALSE; 
+   Bus1_SlaveDP5_Slot5 := FALSE; 
+   Bus1_SlaveDP5_Slot6 := FALSE; 
+   Bus1_SlaveDP5_Slot7 := FALSE; 
+   Bus1_SlaveDP5_Slot8 := FALSE; 
+   Bus1_SlaveDP5_Slot9 := FALSE; 
+   Bus1_SlaveDP5_Slot10 := FALSE; 
+   Bus1_SlaveDP5_Slot11 := FALSE; 
+   Bus1_SlaveDP5_Slot12 := FALSE; 
+   Bus1_SlaveDP5_Slot13 := FALSE; 
+   Bus1_SlaveDP5_Slot14 := FALSE; 
+   Bus1_SlaveDP5_Slot15 := FALSE; 
+   Bus1_SlaveDP6 := FALSE; 
+   Bus1_SlaveDP6_Slot1 := FALSE; 
+   Bus1_SlaveDP6_Slot2 := FALSE; 
+   Bus1_SlaveDP6_Slot3 := FALSE; 
+   Bus1_SlaveDP6_Slot4 := FALSE; 
+   Bus1_SlaveDP6_Slot5 := FALSE; 
+   Bus1_SlaveDP6_Slot6 := FALSE; 
+   Bus1_SlaveDP6_Slot7 := FALSE; 
+   Bus1_SlaveDP6_Slot8 := FALSE; 
+   Bus1_SlaveDP6_Slot9 := FALSE; 
+   Bus1_SlaveDP6_Slot10 := FALSE; 
+   Bus1_SlaveDP6_Slot11 := FALSE; 
+   Bus1_SlaveDP6_Slot12 := FALSE; 
+   Bus1_SlaveDP6_Slot13 := FALSE; 
+   Bus1_SlaveDP6_Slot14 := FALSE; 
+   Bus1_SlaveDP6_Slot15 := FALSE; 
+   Bus1_SlaveDP7 := FALSE; 
+   Bus1_SlaveDP7_Slot1 := FALSE; 
+   Bus1_SlaveDP7_Slot2 := FALSE; 
+   Bus1_SlaveDP7_Slot3 := FALSE; 
+   Bus1_SlaveDP7_Slot4 := FALSE; 
+   Bus1_SlaveDP7_Slot5 := FALSE; 
+   Bus1_SlaveDP7_Slot6 := FALSE; 
+   Bus1_SlaveDP7_Slot7 := FALSE; 
+   Bus1_SlaveDP7_Slot8 := FALSE; 
+   Bus1_SlaveDP7_Slot9 := FALSE; 
+   Bus1_SlaveDP7_Slot10 := FALSE; 
+   Bus1_SlaveDP7_Slot11 := FALSE; 
+   Bus1_SlaveDP7_Slot12 := FALSE; 
+   Bus1_SlaveDP7_Slot13 := FALSE; 
+   Bus1_SlaveDP7_Slot14 := FALSE; 
+   Bus1_SlaveDP7_Slot15 := FALSE; 
+   Bus1_SlaveDP8 := FALSE; 
+   Bus1_SlaveDP8_Slot1 := FALSE; 
+   Bus1_SlaveDP8_Slot2 := FALSE; 
+   Bus1_SlaveDP8_Slot3 := FALSE; 
+   Bus1_SlaveDP8_Slot4 := FALSE; 
+   Bus1_SlaveDP8_Slot5 := FALSE; 
+   Bus1_SlaveDP8_Slot6 := FALSE; 
+   Bus1_SlaveDP8_Slot7 := FALSE; 
+   Bus1_SlaveDP8_Slot8 := FALSE; 
+   Bus1_SlaveDP8_Slot9 := FALSE; 
+   Bus1_SlaveDP8_Slot10 := FALSE; 
+   Bus1_SlaveDP8_Slot11 := FALSE; 
+   Bus1_SlaveDP8_Slot12 := FALSE; 
+   Bus1_SlaveDP8_Slot13 := FALSE; 
+   Bus1_SlaveDP8_Slot14 := FALSE; 
+   Bus1_SlaveDP8_Slot15 := FALSE; 
+END_DATA_BLOCK
+
+DATA_BLOCK "AI"
+TITLE =	
+NAME : AI
+VERSION : 0.0
+
+
+  STRUCT 	
+   IW128 : REAL ;	//Spare
+   C8_FPLVL : REAL ;	//Fish Pass Water Level in the top 10m of the Fish Pass
+   C8_FPWG_POS : REAL ;	//Fish Pass Weir Gate Position for Angular Transmitter
+   IW134 : REAL ;	//Spare
+   IW136 : REAL ;	//Spare
+   IW138 : REAL ;	//Spare
+   IW140 : REAL ;	//Spare
+   IW142 : REAL ;	//Spare
+  END_STRUCT ;	
+BEGIN
+   IW128 := -8.888000e+003; 
+   C8_FPLVL := 3.335023e+001; 
+   C8_FPWG_POS := 3.498320e+001; 
+   IW134 := 9.872685e+001; 
+   IW136 := -8.888000e+003; 
+   IW138 := -8.888000e+003; 
+   IW140 := -8.888000e+003; 
+   IW142 := -8.888000e+003; 
+END_DATA_BLOCK
+
+DATA_BLOCK "I"
+TITLE =	
+NAME : I
+VERSION : 0.1
+
+
+  STRUCT 	
+   Placeholder : ARRAY  [1 .. 8 ] OF //Not Actual DI
+   BYTE ;	
+   C8_FPWG_OPENLS : BOOL ;	//Fish Pass Weir Gate Limit Switch Is Open
+   C8_FPWG_CLOSELS : BOOL ;	//Fish Pass Weir Gate Limit Switch Is Closed
+   C8_FPWG_MOT_OVL : BOOL ;	//Fish Pass Weir Gate Motor OverLoad - NC
+   C8_FPWG_ESTOP : BOOL ;	//Fish Pass Weir Gate Local Panel Estop - NO
+   C8_FPWG_MANMODE : BOOL ;	//Fish Pass Weir Gate Local Panel Key Switch in Manual
+   C8_FPWG_AUTOMODE : BOOL ;	//Fish Pass Weir Gate Local Panel Key Switch in Auto
+   C8_FPWG_OPENPS : BOOL ;	//Fish Pass Weir Gate Open Pushbutton
+   C8_FPWG_STOPPS : BOOL ;	//Fish Pass Weir Gate Stop Pushbutton
+   C8_FPWG_CLOSEPS : BOOL ;	//Fish Pass Weir Gate Close Pushbutton
+   C8_FPLOG1_OPENLS : BOOL ;	//Fish Pass Lower Gate 1 Limit Switch Is Open NO
+   C8_FPLOG1_CLOSELS : BOOL ;	//Fish Pass Lower Gate 1 Limit Switch Is Closed - NO
+   C8_FPLOG1_MOT_OVL : BOOL ;	//Fish Pass Lower Gate 1 Motor OverLoad - NC
+   C8_FPLOG1_ESTOP : BOOL ;	//Fish Pass Lower Gate 1 Local Panel Estop
+   C8_FPLOG1_MANMODE : BOOL ;	//Fish Pass Lower Gate 1 Local Panel Key Switch in Manual
+   C8_FPLOG1_AUTOMODE : BOOL ;	//Fish Pass Lower Gate 1 Local Panel Key Switch in Auto
+   I9_7 : BOOL ;	//Spare DI
+   C8_FPLOG2_OPENLS : BOOL ;	//Fish Pass Lower Gate 2 Limit Switch Is Open NO
+   C8_FPLOG2_CLOSELS : BOOL ;	//Fish Pass Lower Gate 2 Limit Switch Is Closed - NO
+   C8_FPLOG2_MOT_OVL : BOOL ;	//Fish Pass Lower Gate 2 Motor OverLoad
+   C8_FPLOG2_ESTOP : BOOL ;	//Fish Pass Lower Gate 2 Local Panel Estop
+   C8_FPLOG2_MANMODE : BOOL ;	//Fish Pass Lower Gate 2 Local Panel Key Switch in Manual
+   C8_FPLOG2_AUTOMODE : BOOL ;	//Fish Pass Lower Gate 2 Local Panel Key Switch in Auto
+   C8_FPINTAKE_MANMODE : BOOL ;	//Fish Pass Intake Panel Key Switch in Manual
+   C8_FPINTAKE_AUTOMODE : BOOL ;	//Fish Pass Intake Panel Key Switch in Auto
+   C8_FPINTAKE_ESTOP : BOOL ;	//Fish Pass Intake Panel Estop
+   C8_FP_DIRECTION : BOOL ;	//Fish Pass Intake Panel Ascending or Descending
+   C8_FISH_COUNTER : BOOL ;	//Fish Pass Fish Counter  
+   I11_3 : BOOL ;	//Spare DI
+   I11_4 : BOOL ;	//Spare DI
+   I11_5 : BOOL ;	//Spare DI
+   I11_6 : BOOL ;	//Spare DI
+   I11_7 : BOOL ;	//Spare DI
+  END_STRUCT ;	
+BEGIN
+   Placeholder[1] := B#16#0; 
+   Placeholder[2] := B#16#0; 
+   Placeholder[3] := B#16#0; 
+   Placeholder[4] := B#16#0; 
+   Placeholder[5] := B#16#0; 
+   Placeholder[6] := B#16#0; 
+   Placeholder[7] := B#16#0; 
+   Placeholder[8] := B#16#0; 
+   C8_FPWG_OPENLS := TRUE; 
+   C8_FPWG_CLOSELS := FALSE; 
+   C8_FPWG_MOT_OVL := FALSE; 
+   C8_FPWG_ESTOP := FALSE; 
+   C8_FPWG_MANMODE := FALSE; 
+   C8_FPWG_AUTOMODE := TRUE; 
+   C8_FPWG_OPENPS := FALSE; 
+   C8_FPWG_STOPPS := FALSE; 
+   C8_FPWG_CLOSEPS := FALSE; 
+   C8_FPLOG1_OPENLS := FALSE; 
+   C8_FPLOG1_CLOSELS := TRUE; 
+   C8_FPLOG1_MOT_OVL := FALSE; 
+   C8_FPLOG1_ESTOP := FALSE; 
+   C8_FPLOG1_MANMODE := FALSE; 
+   C8_FPLOG1_AUTOMODE := TRUE; 
+   I9_7 := FALSE; 
+   C8_FPLOG2_OPENLS := FALSE; 
+   C8_FPLOG2_CLOSELS := TRUE; 
+   C8_FPLOG2_MOT_OVL := FALSE; 
+   C8_FPLOG2_ESTOP := FALSE; 
+   C8_FPLOG2_MANMODE := FALSE; 
+   C8_FPLOG2_AUTOMODE := TRUE; 
+   C8_FPINTAKE_MANMODE := FALSE; 
+   C8_FPINTAKE_AUTOMODE := TRUE; 
+   C8_FPINTAKE_ESTOP := FALSE; 
+   C8_FP_DIRECTION := FALSE; 
+   C8_FISH_COUNTER := FALSE; 
+   I11_3 := FALSE; 
+   I11_4 := FALSE; 
+   I11_5 := FALSE; 
+   I11_6 := FALSE; 
+   I11_7 := FALSE; 
+END_DATA_BLOCK
+
+DATA_BLOCK "HR"
+TITLE =	
+NAME : HR
+VERSION : 0.1
+
+
+  STRUCT 	
+   PLC_SecOfDay : REAL ;	//PLC Time Seconds Past Midnight
+   TempReal : REAL ;	//Temporary Real
+   AI_Default_Low : REAL ;	//AI Wire Break - Default Low Value
+   AI_Default_High : REAL ;	//AI Wire Break - Default High Value
+   C8_FPLVL_SP : REAL ;	//Fish Pass Water Level Inside The Fish Pass SP
+   C8_FPWG_SP : REAL ;	//Fish Pass Weir Gate Open SP  
+   C8_FPTR_SP : REAL ;	//Fish Pass Tail Race SP
+   Spare_28 : REAL ;	//Spare
+   C8_FPWG_SP_LOW : REAL ;	//Fish Pass Weir Gate Lower SP Level
+   C8_FPWG_SP_High : REAL ;	//Fish Pass Weir Gate Higher SP Level
+   C8_FPWG_POS_2 : REAL ;	//Fish Pass Weir Gate Level Based On Time
+   Spare_44 : REAL ;	//Spare
+   Spare_48 : REAL ;	//Spare
+   Spare_52 : REAL ;	//Spare
+   Spare_56 : REAL ;	//Spare
+   Spare_60 : REAL ;	//Spare
+   C8_FPWG_UP_LIMIT : REAL ;	//Fish Pass Wier Gate Up Limit
+   C8_FPWG_DOWN_LIMIT : REAL ;	//Fish Pass Wier Gate Down Limit
+   C8_FPWG_SP_OPEN : REAL ;	//Fish Pass Wier Gate Opening SP
+   C6_HeadRaceLevel : REAL ;	//Head Race Level from Drawdown PLC
+   C6_TailRaceLevel : REAL ;	//Tail Race Level from Drawdown PLC
+  END_STRUCT ;	
+BEGIN
+   PLC_SecOfDay := 4.577800e+004; 
+   TempReal := 0.000000e+000; 
+   AI_Default_Low := -8.888000e+003; 
+   AI_Default_High := 8.888000e+003; 
+   C8_FPLVL_SP := 2.740000e+001; 
+   C8_FPWG_SP := 3.050000e-001; 
+   C8_FPTR_SP := 4.530000e+000; 
+   Spare_28 := 0.000000e+000; 
+   C8_FPWG_SP_LOW := 5.000000e-002; 
+   C8_FPWG_SP_High := 5.000000e-002; 
+   C8_FPWG_POS_2 := 0.000000e+000; 
+   Spare_44 := 0.000000e+000; 
+   Spare_48 := 0.000000e+000; 
+   Spare_52 := 3.019000e+001; 
+   Spare_56 := 0.000000e+000; 
+   Spare_60 := 0.000000e+000; 
+   C8_FPWG_UP_LIMIT := 3.313601e+001; 
+   C8_FPWG_DOWN_LIMIT := 3.303601e+001; 
+   C8_FPWG_SP_OPEN := 3.308601e+001; 
+   C6_HeadRaceLevel := 3.339101e+001; 
+   C6_TailRaceLevel := 3.046839e+000; 
+END_DATA_BLOCK
+
+DATA_BLOCK "HB"
+TITLE =	
+NAME : HB
+VERSION : 0.0
+
+
+  STRUCT 	
+   C8_Off : BOOL ;	//Fish Pass Not Operating
+   C8_Step01 : BOOL ;	//Fish Pass Step  1 Starting Up
+   C8_Step02 : BOOL ;	//Fish Pass Step  2 Starting Up
+   C8_Step03 : BOOL ;	//Fish Pass Step  3 Starting Up
+   C8_Step04 : BOOL ;	//Fish Pass Step  4 Starting Up
+   C8_Step05 : BOOL ;	//Fish Pass Step  5 Starting Up
+   C8_Step06 : BOOL ;	//Fish Pass Step  6 Starting Up
+   C8_Step07 : BOOL ;	//Fish Pass Step  7 Starting Up
+   C8_Step08 : BOOL ;	//Fish Pass Step  8 Starting Up
+   C8_Step09 : BOOL ;	//Fish Pass Step  9 Starting Up
+   C8_Step10 : BOOL ;	//Fish Pass Step  10 Starting Up
+   C8_Step11 : BOOL ;	//Fish Pass Step  11 Starting Up
+   C8_Step12 : BOOL ;	//Fish Pass Step  12 Starting Up
+   C8_Step13 : BOOL ;	//Fish Pass Step  13 Starting Up
+   C8_Step14 : BOOL ;	//Fish Pass Step  14 Starting Up
+   C8_Step15 : BOOL ;	//Fish Pass Step  15 Starting Up
+   C8_Trans0Ok : BOOL ;	//Requirements for transition  0, step 0-step1 OK
+   C8_Trans1Ok : BOOL ;	//Requirements for transition  1, step 1-step 2 OK
+   C8_Trans2Ok : BOOL ;	//Requirements for transition  2, step 2-step 3 OK
+   C8_Trans3Ok : BOOL ;	//Requirements for transition  3, step 3-step 4 OK
+   C8_Trans4Ok : BOOL ;	//Requirements for transition  4, step 4-step 5 OK
+   C8_Trans5Ok : BOOL ;	//Requirements for transition  5, step 5-step 6 OK
+   C8_Trans6Ok : BOOL ;	//Requirements for transition  6, step 6-step 7 OK
+   C8_Trans7Ok : BOOL ;	//Requirements for transition  7, step 7-step 8 OK
+   C8_Trans8Ok : BOOL ;	//Requirements for transition  8, step 8-step9 OK
+   C8_Trans9Ok : BOOL ;	//Requirements for transition  8, step 9-step0 OK
+   C8_Trans10Ok : BOOL ;	//Requirements for transition  8, step 10-step11 OK
+   C8_Trans11Ok : BOOL ;	//Requirements for transition  8, step 11-step12 OK
+   C8_Trans12Ok : BOOL ;	//Requirements for transition  8, step 12-step13 OK
+   C8_Trans13Ok : BOOL ;	//Requirements for transition  8, step 13-step14 OK
+   C8_Trans14Ok : BOOL ;	//Requirements for transition  8, step 14-step15 OK
+   C8_Trans15Ok : BOOL ;	//Requirements for transition  8, step 15-step16 OK
+   StepTransOk : BOOL ;	//Step Transition Conditions OK
+   C8_StepTimeComp : BOOL ;	//Step Time Completed
+   C8_StartupMon : BOOL ;	//Enable Startup time monitoring
+   C8_LG1CmdIssued : BOOL ;	//Lower Gate 1 Open/Close Command Issued
+   C8_FPLOG1_OPENLS_1 : BOOL ;	//Open limit switch after pulsed timer from limit switch DI
+   C8_FPLOG1_CLOSELS_1 : BOOL ;	//Close limit switch after pulsed timer from limit switch DI
+   C8_LG2CmdIssued : BOOL ;	//Lower Gate 2 Open/Close Command Issued
+   C8_WGCmdIssued : BOOL ;	//Weir Gate Open/Close Command Issued
+   TOD_0000 : BOOL ;	//Time Of Day 00:00 Pulse, On 1 Scan 
+   TOD_0000Last : BOOL ;	//Time Of Day 00:00 Value Last Scan 
+   TOD_0600 : BOOL ;	//Time Of Day Pulse 06:00, On 1 Scan
+   TOD_0600Last : BOOL ;	//Time Of Day Pulse Value Last Scan
+   TOD_0900 : BOOL ;	//Time Of Day Pulse 09:00, On 1 Scan
+   TOD_0900Last : BOOL ;	//Time Of Day Pulse Value Last Scan
+   C8_OB121_ERROR : BOOL ;	//OB121 ERROR PROGRAM
+   C8_OB85_ERROR : BOOL ;	//OB85 OB FAULTING
+   C8_OB122_ERROR : BOOL ;	//OB122 ACCES MODULE ERROR
+   C8_FPLOG_SEL : BOOL ;	//Fish Pass Lower Gate Selection
+   C8_FP_MOT_OVL : BOOL ;	//Fish Pass Motor OverLoad Latch Alarm
+   C8_FP_ESTOP : BOOL ;	//Fish Pass EStop Latch Alarm
+   C8_FP_RESET : BOOL ;	//Fish Pass Reset
+   C8_FP_MOT_OVL_RS : BOOL ;	//Fish Pass Motor OverLoad Reset
+   C8_FP_ESTOP_RS : BOOL ;	//Fish Pass ESTOP Resets
+   C8_FISH_COUNTER_RS : BOOL ;	//Fish Pass Fish Counter Reset
+   C8_FPWG_HMIOPENCMD : BOOL ;	//Fish Pass HMI Weir Gate Open Command
+   C8_FPWG_HMICLOSECMD : BOOL ;	//Fish Pass HMI Weir Gate Closed Command
+   Rsvd6_2 : BOOL ;	
+   Rsvd6_3 : BOOL ;	
+   Rsvd6_4 : BOOL ;	
+   Rsvd6_5 : BOOL ;	
+   Rsvd6_6 : BOOL ;	
+   Rsvd6_7 : BOOL ;	
+   C8_FPLOG2_OPENLS_1 : BOOL ;	//Open limit switch after pulsed timer from limit switch DI
+   C8_FPLOG_AutoOpenCond : BOOL ;	//Fish Pass HMI Lower Gates Auto Open Conditions
+   C8_FPLOG_AutoCloseCond : BOOL ;	//Fish Pass HMI Lower Gates Auto Close Conditions
+   C8_FPLOG1_Closed : BOOL ;	//Fish Pass Lower Gate 1 Closed
+   C8_FPLOG2_Closed : BOOL ;	//Fish Pass Lower Gate 2 Closed
+   C8_FPLOG1_STOPCMD_Latch : BOOL ;	//Fish Pass Lower Gate 1 Stop Command Latch
+   C8_FPLOG2_STOPCMD_Latch : BOOL ;	//Fish Pass Lower Gate 2 Stop Command Latch
+   C8_WG_STOPCMD_Latch : BOOL ;	//Fish Pass Weir Gate Stop Command Latch
+   C8_FP_MODE_Man : BOOL ;	//Fish Pass Operating Mode Manual
+   C8_FP_MODE_Auto : BOOL ;	//Fish Pass Operating Mode Auto
+   Rsvd8_2 : BOOL ;	
+   Rsvd8_3 : BOOL ;	
+   Rsvd8_4 : BOOL ;	
+   Rsvd8_5 : BOOL ;	
+   Rsvd8_6 : BOOL ;	
+   Rsvd8_7 : BOOL ;	
+   C8_FPLOG1_HMIOPENCMD : BOOL ;	//Fish Pass HMI Lower Gate 1 Open Command
+   C8_FPLOG1_HMICLOSECMD : BOOL ;	//Fish Pass HMI Lower Gate 1 Closed Command
+   Rsvd9_2 : BOOL ;	
+   Rsvd9_3 : BOOL ;	
+   Rsvd9_4 : BOOL ;	
+   Rsvd9_5 : BOOL ;	
+   Rsvd9_6 : BOOL ;	
+   C8_FPLOG2_CLOSELS_1 : BOOL ;	//Close limit switch after pulsed timer from limit switch DI
+   C8_FPLOG2_HMIOPENCMD : BOOL ;	//Fish Pass HMI Lower Gate 2 Open Command
+   C8_FPLOG2_HMICLOSECMD : BOOL ;	//Fish Pass HMI Lower Gate 2 Closed Command
+   Rsvd10_2 : BOOL ;	
+   Rsvd10_3 : BOOL ;	
+   Rsvd10_4 : BOOL ;	
+   Rsvd10_5 : BOOL ;	
+   Rsvd10_6 : BOOL ;	
+   Rsvd10_7 : BOOL ;	
+   C8_FPWG_HMISTOPCMD : BOOL ;	//Fish Pass HMI Weir Gate Stop Command
+   C8_FPLOG1_HMISTOPCMD : BOOL ;	//Fish Pass HMI Lower Gate 1 Stop Command
+   C8_FPLOG2_HMISTOPCMD : BOOL ;	//Fish Pass HMI Lower Gate 2 Stop Command
+   C8_FPWG_AutoOpenCond : BOOL ;	//Fish Pass HMI Weir Gate Auto Open Conditions
+   C8_FPWG_AutoCloseCond : BOOL ;	//Fish Pass HMI Weir Gate Auto Close Conditions
+   C8_FPWL_WGOPNLVL : BOOL ;	//Fish Pass Water level OK for 10 s to Open Weir Gate
+   DrawdownCommFail : BOOL ;	
+   C8_FPWG_OPENCMD_Ons : BOOL ;	
+   C8_FPWG_CLOSECMD_Ons : BOOL ;	
+   C8_FPLOG1_OPENCMD_Ons : BOOL ;	
+   C8_FPLOG1_CLOSECMD_Ons : BOOL ;	
+   C8_FPLOG2_OPENCMD_Ons : BOOL ;	
+   C8_FPLOG2_CLOSECMD_Ons : BOOL ;	
+   C8_FPTIME_MAN_DEFAULT : BOOL ;	//Load default set points to fish pass or have manual entry
+  END_STRUCT ;	
+BEGIN
+   C8_Off := TRUE; 
+   C8_Step01 := FALSE; 
+   C8_Step02 := FALSE; 
+   C8_Step03 := FALSE; 
+   C8_Step04 := FALSE; 
+   C8_Step05 := FALSE; 
+   C8_Step06 := FALSE; 
+   C8_Step07 := FALSE; 
+   C8_Step08 := FALSE; 
+   C8_Step09 := FALSE; 
+   C8_Step10 := FALSE; 
+   C8_Step11 := FALSE; 
+   C8_Step12 := FALSE; 
+   C8_Step13 := FALSE; 
+   C8_Step14 := FALSE; 
+   C8_Step15 := FALSE; 
+   C8_Trans0Ok := FALSE; 
+   C8_Trans1Ok := FALSE; 
+   C8_Trans2Ok := FALSE; 
+   C8_Trans3Ok := FALSE; 
+   C8_Trans4Ok := FALSE; 
+   C8_Trans5Ok := FALSE; 
+   C8_Trans6Ok := FALSE; 
+   C8_Trans7Ok := FALSE; 
+   C8_Trans8Ok := FALSE; 
+   C8_Trans9Ok := FALSE; 
+   C8_Trans10Ok := FALSE; 
+   C8_Trans11Ok := FALSE; 
+   C8_Trans12Ok := FALSE; 
+   C8_Trans13Ok := FALSE; 
+   C8_Trans14Ok := FALSE; 
+   C8_Trans15Ok := FALSE; 
+   StepTransOk := FALSE; 
+   C8_StepTimeComp := TRUE; 
+   C8_StartupMon := FALSE; 
+   C8_LG1CmdIssued := FALSE; 
+   C8_FPLOG1_OPENLS_1 := FALSE; 
+   C8_FPLOG1_CLOSELS_1 := TRUE; 
+   C8_LG2CmdIssued := FALSE; 
+   C8_WGCmdIssued := FALSE; 
+   TOD_0000 := FALSE; 
+   TOD_0000Last := FALSE; 
+   TOD_0600 := FALSE; 
+   TOD_0600Last := FALSE; 
+   TOD_0900 := FALSE; 
+   TOD_0900Last := FALSE; 
+   C8_OB121_ERROR := FALSE; 
+   C8_OB85_ERROR := FALSE; 
+   C8_OB122_ERROR := FALSE; 
+   C8_FPLOG_SEL := FALSE; 
+   C8_FP_MOT_OVL := FALSE; 
+   C8_FP_ESTOP := FALSE; 
+   C8_FP_RESET := FALSE; 
+   C8_FP_MOT_OVL_RS := FALSE; 
+   C8_FP_ESTOP_RS := FALSE; 
+   C8_FISH_COUNTER_RS := FALSE; 
+   C8_FPWG_HMIOPENCMD := FALSE; 
+   C8_FPWG_HMICLOSECMD := FALSE; 
+   Rsvd6_2 := FALSE; 
+   Rsvd6_3 := FALSE; 
+   Rsvd6_4 := FALSE; 
+   Rsvd6_5 := FALSE; 
+   Rsvd6_6 := FALSE; 
+   Rsvd6_7 := FALSE; 
+   C8_FPLOG2_OPENLS_1 := FALSE; 
+   C8_FPLOG_AutoOpenCond := FALSE; 
+   C8_FPLOG_AutoCloseCond := FALSE; 
+   C8_FPLOG1_Closed := FALSE; 
+   C8_FPLOG2_Closed := FALSE; 
+   C8_FPLOG1_STOPCMD_Latch := FALSE; 
+   C8_FPLOG2_STOPCMD_Latch := FALSE; 
+   C8_WG_STOPCMD_Latch := FALSE; 
+   C8_FP_MODE_Man := TRUE; 
+   C8_FP_MODE_Auto := FALSE; 
+   Rsvd8_2 := FALSE; 
+   Rsvd8_3 := FALSE; 
+   Rsvd8_4 := FALSE; 
+   Rsvd8_5 := FALSE; 
+   Rsvd8_6 := FALSE; 
+   Rsvd8_7 := FALSE; 
+   C8_FPLOG1_HMIOPENCMD := FALSE; 
+   C8_FPLOG1_HMICLOSECMD := FALSE; 
+   Rsvd9_2 := FALSE; 
+   Rsvd9_3 := FALSE; 
+   Rsvd9_4 := FALSE; 
+   Rsvd9_5 := FALSE; 
+   Rsvd9_6 := FALSE; 
+   C8_FPLOG2_CLOSELS_1 := TRUE; 
+   C8_FPLOG2_HMIOPENCMD := FALSE; 
+   C8_FPLOG2_HMICLOSECMD := FALSE; 
+   Rsvd10_2 := FALSE; 
+   Rsvd10_3 := FALSE; 
+   Rsvd10_4 := FALSE; 
+   Rsvd10_5 := FALSE; 
+   Rsvd10_6 := FALSE; 
+   Rsvd10_7 := FALSE; 
+   C8_FPWG_HMISTOPCMD := FALSE; 
+   C8_FPLOG1_HMISTOPCMD := FALSE; 
+   C8_FPLOG2_HMISTOPCMD := FALSE; 
+   C8_FPWG_AutoOpenCond := FALSE; 
+   C8_FPWG_AutoCloseCond := FALSE; 
+   C8_FPWL_WGOPNLVL := FALSE; 
+   DrawdownCommFail := FALSE; 
+   C8_FPWG_OPENCMD_Ons := TRUE; 
+   C8_FPWG_CLOSECMD_Ons := TRUE; 
+   C8_FPLOG1_OPENCMD_Ons := TRUE; 
+   C8_FPLOG1_CLOSECMD_Ons := TRUE; 
+   C8_FPLOG2_OPENCMD_Ons := TRUE; 
+   C8_FPLOG2_CLOSECMD_Ons := TRUE; 
+   C8_FPTIME_MAN_DEFAULT := TRUE; 
+END_DATA_BLOCK
+
+DATA_BLOCK "Q"
+TITLE =	
+NAME : Q
+VERSION : 0.1
+
+
+  STRUCT 	
+   Placeholder : ARRAY  [0 .. 3 ] OF //Spare - Place holder not an actual DO
+   BYTE ;	
+   C8_FPWG_OPENCMD : BOOL ;	//Fish Pass Weir Gate Open Command  
+   C8_FPWG_CLOSECMD : BOOL ;	//Fish Pass Weir Gate Closed Command    
+   C8_FPWG_STOPCMD : BOOL ;	//Fish Pass Weir Gate Stop Command  
+   C8_FPLOG1_OPENCMD : BOOL ;	//Fish Pass Lower Gate 1 Open Command   
+   C8_FPLOG1_CLOSECMD : BOOL ;	//Fish Pass Lower Gate 1 Closed Command    
+   C8_FPLOG1_STOPCMD : BOOL ;	//Fish Pass Lower Gate 1 Stop Command 
+   C8_FPLOG2_OPENCMD : BOOL ;	//Fish Pass Lower Gate 2 Open Command    
+   C8_FPLOG2_CLOSECMD : BOOL ;	//Fish Pass Lower Gate 2 Closed Command   
+   C8_FPLOG2_STOPCMD : BOOL ;	//Fish Pass Lower Gate 2 Stop Command  
+   Q5_1 : BOOL ;	//Spare DO
+   Q5_2 : BOOL ;	//Spare DO
+   Q5_3 : BOOL ;	//Spare DO
+   Q5_4 : BOOL ;	//Spare DO
+   Q5_5 : BOOL ;	//Spare DO
+   Q5_6 : BOOL ;	//Spare DO
+   Q5_7 : BOOL ;	//Spare DO
+   Q6_0 : BOOL ;	//Spare DO
+   Q6_1 : BOOL ;	//Spare DO
+   Q6_2 : BOOL ;	//Spare DO
+   Q6_3 : BOOL ;	//Spare DO
+   Q6_4 : BOOL ;	//Spare DO
+   Q6_5 : BOOL ;	//Spare DO
+   Q6_6 : BOOL ;	//Spare DO
+   Q6_7 : BOOL ;	//Spare DO
+   Q7_0 : BOOL ;	//Spare DO
+   Q7_1 : BOOL ;	//Spare DO
+   Q7_2 : BOOL ;	//Spare DO
+   Q7_3 : BOOL ;	//Spare DO
+   Q7_4 : BOOL ;	//Spare DO
+   Q7_5 : BOOL ;	//Spare DO
+   Q7_6 : BOOL ;	//Spare DO
+   Q7_7 : BOOL ;	//Spare DO
+  END_STRUCT ;	
+BEGIN
+   Placeholder[0] := B#16#0; 
+   Placeholder[1] := B#16#0; 
+   Placeholder[2] := B#16#0; 
+   Placeholder[3] := B#16#0; 
+   C8_FPWG_OPENCMD := FALSE; 
+   C8_FPWG_CLOSECMD := FALSE; 
+   C8_FPWG_STOPCMD := TRUE; 
+   C8_FPLOG1_OPENCMD := FALSE; 
+   C8_FPLOG1_CLOSECMD := FALSE; 
+   C8_FPLOG1_STOPCMD := FALSE; 
+   C8_FPLOG2_OPENCMD := FALSE; 
+   C8_FPLOG2_CLOSECMD := FALSE; 
+   C8_FPLOG2_STOPCMD := FALSE; 
+   Q5_1 := FALSE; 
+   Q5_2 := FALSE; 
+   Q5_3 := FALSE; 
+   Q5_4 := FALSE; 
+   Q5_5 := FALSE; 
+   Q5_6 := FALSE; 
+   Q5_7 := FALSE; 
+   Q6_0 := FALSE; 
+   Q6_1 := FALSE; 
+   Q6_2 := FALSE; 
+   Q6_3 := FALSE; 
+   Q6_4 := FALSE; 
+   Q6_5 := FALSE; 
+   Q6_6 := FALSE; 
+   Q6_7 := FALSE; 
+   Q7_0 := FALSE; 
+   Q7_1 := FALSE; 
+   Q7_2 := FALSE; 
+   Q7_3 := FALSE; 
+   Q7_4 := FALSE; 
+   Q7_5 := FALSE; 
+   Q7_6 := FALSE; 
+   Q7_7 := FALSE; 
+END_DATA_BLOCK
+
+DATA_BLOCK "HW"
+TITLE =	
+NAME : HW
+VERSION : 0.0
+
+
+  STRUCT 	
+   INCR_EACH_SCAN : DINT ;	//0 -> 100 Increment each scan
+   INCR_EVERY_SEC : DINT ;	//0 -> 100 Increment every 1.0 seconds
+   PLC_Year : DINT ;	//PLC Year
+   PLC_Month : DINT ;	//PLC Month
+   PLC_Day : DINT ;	//PLC Day of Month
+   PLC_Hour : DINT ;	//PLC Hour (00-23)
+   PLC_Minute : DINT ;	//PLC Minute (00-59)
+   PLC_Second : DINT ;	//PLC Minute (00-59)
+   PLC_Date : DINT ;	//PLC Date YYYYMMDD
+   PLC_Time : DINT ;	//PLC Time HHMMSS
+   PLC_DateTime : DATE_AND_TIME ;	//DateTime
+   PLC_Year_BCD : DWORD ;	//PLC Year
+   PLC_Month_BCD : DWORD ;	//PLC Month
+   PLC_Day_BCD : DWORD ;	//PLC Day of Month
+   PLC_Hour_BCD : DWORD ;	//PLC Hour (00-23)
+   PLC_Minute_BCD : DWORD ;	//PLC Minute (00-59)
+   PLC_Second_BCD : DWORD ;	//PLC Minute (00-59)
+   PLC_DT_RetVar : INT ;	
+   TempDINT1 : DINT ;	//Temporary DINT 1
+   TempDINT2 : DINT ;	//Temporary DINT 2
+   C8_FP_COUNTER : DINT ;	//Fish Pass Counter
+   C8_FPG_STEP : DINT ;	//Fish Pass Step Number
+   C8_FP_STEPTIME : DINT ;	//Fish Pass Step Time
+   C8_FP_STEPTIME_REM : DINT ;	//Fish Pass Step Time Remaining
+   C8_FISH_COUNTER : DINT ;	//Fish Pass Fish Counter
+   C8_FP_MODE : DINT ;	//Fish Pass Mode 0=Off, 1=Man, 2=Auto
+   STEP_NUM_MESS : DINT ;	//Step Message Number
+   C8_FPG_STEP_LAST : DINT ;	//Step Number Last Scan
+   C8_FPLOG_CRA_SP : DINT ;	//Fish Pass Lower Gate Crack Open SP
+   C8_FPLOG_OPEN_SP : DINT ;	//Fish Pass Lower Gate Open SP
+   C8_LOG1_POS : DINT ;	//Lower Gate 1 Position
+   C8_LOG2_POS : DINT ;	//Lower Gate 2 Position
+   C8_FPFISH_ASC_SP : DINT ;	//Fish Pass Ascending Timer
+   C8_FPFISH_DES_SP : DINT ;	//Fish Pass Descending Timer
+   C8_FPFISH_ASC_COUNT : DINT ;	//Fish Pass Descending Timer Count
+   C8_FPFISH_DES_COUNT : DINT ;	//Fish Pass Ascending Timer Count
+   Spare_146 : DINT ;	//Spare
+   Step0TimePre : DINT ;	//Step 0 Timer Preset
+   Step1TimePre : DINT ;	//Step 1 Timer Preset
+   Step2TimePre : DINT ;	//Step 2 Timer Preset
+   Step3TimePre : DINT ;	//Step 3 Timer Preset
+   Step4TimePre : DINT ;	//Step 4 Timer Preset
+   Step5TimePre : DINT ;	//Step 5 Timer Preset
+   Step6TimePre : DINT ;	//Step 6 Timer Preset
+   Step7TimePre : DINT ;	//Step 7 Timer Preset
+   Step8TimePre : DINT ;	//Step 8 Timer Preset
+   Step9TimePre : DINT ;	//Step 9 Timer Preset
+   Step2TimePre_ASC : DINT ;	//Step 2 Timer Preset Ascending
+   Step2TimePre_DES : DINT ;	//Step 2 Timer Preset Descending
+   Step8TimePre_ASC : DINT ;	//Step 8 Timer Preset Ascending
+   Step8TimePre_DES : DINT ;	//Step 8 Timer Preset Descending
+   C8_FPESC_ASC_SP : DINT ;	//Fish Pass Escaping Ascending Timer
+   C8_FPESC_DES_SP : DINT ;	//Fish Pass Escaping Descending Timer
+   Spare_214 : DINT ;	//Spare
+   Blank_msg : DINT ;	//Fish Pass Blank Transition Message
+   Tran_Msg : DINT ;	//Fish Pass Transition Message in PLC
+   DrawdownRollRegLast : DINT ;	
+   C8_FPWG_POS_1 : WORD ;	//Wier Gate Position based on time
+   C8_FPWG_POS_2 : DINT ;	//Wier Gate Position based on time
+  END_STRUCT ;	
+BEGIN
+   INCR_EACH_SCAN := L#69; 
+   INCR_EVERY_SEC := L#41; 
+   PLC_Year := L#11; 
+   PLC_Month := L#6; 
+   PLC_Day := L#1; 
+   PLC_Hour := L#12; 
+   PLC_Minute := L#42; 
+   PLC_Second := L#59; 
+   PLC_Date := L#20110601; 
+   PLC_Time := L#124259; 
+   PLC_DateTime := DT#11-6-1-12:42:59.317; 
+   PLC_Year_BCD := DW#16#11; 
+   PLC_Month_BCD := DW#16#6; 
+   PLC_Day_BCD := DW#16#1; 
+   PLC_Hour_BCD := DW#16#12; 
+   PLC_Minute_BCD := DW#16#42; 
+   PLC_Second_BCD := DW#16#59; 
+   PLC_DT_RetVar := 0; 
+   TempDINT1 := L#45720; 
+   TempDINT2 := L#45779; 
+   C8_FP_COUNTER := L#265; 
+   C8_FPG_STEP := L#0; 
+   C8_FP_STEPTIME := L#0; 
+   C8_FP_STEPTIME_REM := L#0; 
+   C8_FISH_COUNTER := L#0; 
+   C8_FP_MODE := L#1; 
+   STEP_NUM_MESS := L#5100; 
+   C8_FPG_STEP_LAST := L#0; 
+   C8_FPLOG_CRA_SP := L#10; 
+   C8_FPLOG_OPEN_SP := L#0; 
+   C8_LOG1_POS := L#0; 
+   C8_LOG2_POS := L#0; 
+   C8_FPFISH_ASC_SP := L#8550; 
+   C8_FPFISH_DES_SP := L#4020; 
+   C8_FPFISH_ASC_COUNT := L#0; 
+   C8_FPFISH_DES_COUNT := L#0; 
+   Spare_146 := L#0; 
+   Step0TimePre := L#0; 
+   Step1TimePre := L#0; 
+   Step2TimePre := L#0; 
+   Step3TimePre := L#0; 
+   Step4TimePre := L#10; 
+   Step5TimePre := L#4020; 
+   Step6TimePre := L#30; 
+   Step7TimePre := L#0; 
+   Step8TimePre := L#300; 
+   Step9TimePre := L#8550; 
+   Step2TimePre_ASC := L#0; 
+   Step2TimePre_DES := L#0; 
+   Step8TimePre_ASC := L#300; 
+   Step8TimePre_DES := L#300; 
+   C8_FPESC_ASC_SP := L#4020; 
+   C8_FPESC_DES_SP := L#8550; 
+   Spare_214 := L#0; 
+   Blank_msg := L#5999; 
+   Tran_Msg := L#4000; 
+   DrawdownRollRegLast := L#6685; 
+   C8_FPWG_POS_1 := W#16#0; 
+   C8_FPWG_POS_2 := L#0; 
+END_DATA_BLOCK
+
+DATA_BLOCK "DDtoFishPass"
+TITLE =
+VERSION : 0.1
+
+
+  STRUCT 	
+   RollReg : DINT ;	//Rolling Reg From Other PLC
+   HeadraceAve : REAL ;	//HeadRace Average (From DrawDown PLC)
+   TailRaveAve : REAL ;	//TailRace Average (From DrawDown PLC)
+  END_STRUCT ;	
+BEGIN
+   RollReg := L#6685; 
+   HeadraceAve := 3.339119e+001; 
+   TailRaveAve := 3.046779e+000; 
+END_DATA_BLOCK
+
+FUNCTION "ANALOG INPUT TO REAL" : VOID
+TITLE =Convert Analog Input To REAL And Scale
+NAME : ANATORL
+VERSION : 0.2
+
+
+VAR_INPUT
+  RawIn : WORD ;	//12bit analogue value
+  EuMin : REAL ;	//Min Value of the device
+  EuMax : REAL ;	//Max Value of the device
+  FailValue : REAL ;	//Fail Safe Value
+END_VAR
+VAR_OUTPUT
+  Wire_Break : BOOL ;	//Alarm for wirebreak
+  Out_Range : BOOL ;	//Alarm for Out of range
+END_VAR
+VAR_IN_OUT
+  In : REAL ;	//Value scaled and in REAL
+END_VAR
+VAR_TEMP
+  RawReal : REAL ;	//Input Value in REAL
+  Span : REAL ;	//Full range
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+
+      L     #RawIn; //Wirebreak Alarm
+      L     W#16#8000; //Value in case of WireBreak
+      >=I   ; 
+      A(    ; 
+      L     #RawIn; 
+      L     W#16#FD4D; 
+      <=I   ; 
+      )     ; 
+      =     #Wire_Break; 
+
+NETWORK
+TITLE =
+
+      L     #RawIn; //Out Of Range Alarm
+      L     W#16#6C01; //Out Of Range when Higher than 20mA
+      >=I   ; 
+      A(    ; 
+      L     #RawIn; 
+      L     W#16#7FFF; 
+      <=I   ; 
+      )     ; 
+      =     #Out_Range; 
+NETWORK
+TITLE =
+
+      L     #RawIn; //Function For SCALING in REAL
+      ITD   ; 
+      DTR   ; 
+      T     #RawReal; 
+      L     #EuMax; 
+      L     #EuMin; 
+      -R    ; 
+      T     #Span; 
+      L     #RawReal; 
+      L     #Span; 
+      *R    ; 
+      L     2.764800e+004; //range of the card 4ma=0 --> 20ma=27648
+
+      /R    ; 
+      L     #EuMin; 
+      +R    ; 
+      A     "SysSimulation"; //Never write the value when simulation mode activate
+      JC    lbl; 
+      T     #In; 
+
+      A(    ; 
+      O     #Wire_Break; //Wire Break or Out Of Range then set In to Fail Safe Value
+      O     #Out_Range; 
+      )     ; 
+      JCN   lbl; 
+      L     #FailValue; 
+      T     #In; 
+
+lbl:  NOP   0; 
+
+
+END_FUNCTION
+
+FUNCTION "PLC OVERHEADS" : VOID
+TITLE =
+// PLC FLAG  
+NAME : PLCOVHEA
+VERSION : 0.0
+
+
+VAR_TEMP
+  MemPulse05 : BOOL ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =True Flag (always on)
+
+      O     "AlwaysOn"; 
+      ON    "AlwaysOn"; 
+      =     "AlwaysOn"; 
+      =     "MaintForceOn"; 
+NETWORK
+TITLE =False Flag (always off)
+
+      A     "AlwaysOff"; 
+      AN    "AlwaysOff"; 
+      =     "AlwaysOff"; 
+      =     "MaintForceOff"; 
+NETWORK
+TITLE =0.5 sec Pulse Flag Timer
+
+      A     "ClockTmr_05"; 
+      FP    "FP_05"; 
+      =     "Pulse0_5"; 
+NETWORK
+TITLE =1 sec Pulse Flag Timer
+
+      A     "ClockTmr_10"; 
+      FP    "FP_10"; 
+      =     "Pulse1_0"; 
+NETWORK
+TITLE =Invert flag state Each Program Scan, On 1 scan Off 1 scan
+
+      AN    "Toggles1Scan"; 
+      =     "Toggles1Scan"; 
+NETWORK
+TITLE =Invert flag state every second, On 1 sec Off 1 sec
+
+      A     "Pulse1_0"; 
+      AN    "Toggles1Sec"; 
+      O     ; 
+      AN    "Pulse1_0"; 
+      A     "Toggles1Sec"; 
+      =     "Toggles1Sec"; 
+NETWORK
+TITLE =Increment number scan
+
+      L     "HW".INCR_EACH_SCAN; 
+      L     1; 
+      +I    ; 
+      T     "HW".INCR_EACH_SCAN; 
+NETWORK
+TITLE =Reset number scan when >100
+
+      L     "HW".INCR_EACH_SCAN; 
+      L     100; 
+      >I    ; 
+      JCN   M001; 
+      L     0; 
+      T     "HW".INCR_EACH_SCAN; 
+M001: NOP   0; 
+NETWORK
+TITLE =Increment every second
+
+      AN    "Pulse1_0"; 
+      JC    M002; 
+
+      L     "HW".INCR_EVERY_SEC; 
+      L     1; 
+      +I    ; 
+      T     "HW".INCR_EVERY_SEC; 
+NETWORK
+TITLE =Reset when >100
+
+      L     "HW".INCR_EVERY_SEC; 
+      L     100; 
+      >I    ; 
+      JCN   M002; 
+      L     0; 
+      T     "HW".INCR_EVERY_SEC; 
+M002: NOP   0; 
+NETWORK
+TITLE =USELESS, ONLY FOR CROSS REFERENCE FLAG AREA RESERVED
+
+      A     "ClockTmr_01"; 
+      O     "ClockTmr_02"; 
+      O     "ClockTmr_04"; 
+      O     "ClockTmr_05"; 
+      O     "ClockTmr_08"; 
+      O     "ClockTmr_10"; 
+      O     "ClockTmr_16"; 
+      O     "ClockTmr_20"; 
+
+
+NETWORK
+TITLE =
+
+      CALL "READ_CLK" (
+           RET_VAL                  := "HW".PLC_DT_RetVar,
+           CDT                      := "HW".PLC_DateTime);
+      NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      L     DB107.DBB   40; 
+      T     "HW".PLC_Year_BCD; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _001; 
+      L     "HW".PLC_Year_BCD; 
+      BTD   ; 
+      T     "HW".PLC_Year; 
+_001: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      L     DB107.DBB   41; 
+      T     "HW".PLC_Month_BCD; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _002; 
+      L     "HW".PLC_Month_BCD; 
+      BTD   ; 
+      T     "HW".PLC_Month; 
+_002: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      L     DB107.DBB   42; 
+      T     "HW".PLC_Day_BCD; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _003; 
+      L     "HW".PLC_Day_BCD; 
+      BTD   ; 
+      T     "HW".PLC_Day; 
+_003: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      L     DB107.DBB   43; 
+      T     "HW".PLC_Hour_BCD; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _004; 
+      L     "HW".PLC_Hour_BCD; 
+      BTD   ; 
+      T     "HW".PLC_Hour; 
+_004: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      L     DB107.DBB   44; 
+      T     "HW".PLC_Minute_BCD; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _005; 
+      L     "HW".PLC_Minute_BCD; 
+      BTD   ; 
+      T     "HW".PLC_Minute; 
+_005: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      L     DB107.DBB   45; 
+      T     "HW".PLC_Second_BCD; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _006; 
+      L     "HW".PLC_Second_BCD; 
+      BTD   ; 
+      T     "HW".PLC_Second; 
+_006: NOP   0; 
+NETWORK
+TITLE =PLC Date - YYYYMMDD for HMI Date Display.
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      L     L#2000; 
+      L     "HW".PLC_Year; 
+      +D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _007; 
+      L     "HW".TempDINT1; 
+      L     L#100; 
+      *D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_007: A     BR; 
+      )     ; 
+      JNB   _008; 
+      L     "HW".TempDINT1; 
+      L     "HW".PLC_Month; 
+      +D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_008: A     BR; 
+      )     ; 
+      JNB   _009; 
+      L     "HW".TempDINT1; 
+      L     L#100; 
+      *D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_009: A     BR; 
+      )     ; 
+      JNB   _00a; 
+      L     "HW".TempDINT1; 
+      L     "HW".PLC_Day; 
+      +D    ; 
+      T     "HW".PLC_Date; 
+_00a: NOP   0; 
+NETWORK
+TITLE =PLC Time - HHMMSS for general use.
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      L     "HW".PLC_Hour; 
+      L     L#100; 
+      *D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _00b; 
+      L     "HW".TempDINT1; 
+      L     "HW".PLC_Minute; 
+      +D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_00b: A     BR; 
+      )     ; 
+      JNB   _00c; 
+      L     "HW".TempDINT1; 
+      L     L#100; 
+      *D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_00c: A     BR; 
+      )     ; 
+      JNB   _00d; 
+      L     "HW".TempDINT1; 
+      L     "HW".PLC_Second; 
+      +D    ; 
+      T     "HW".PLC_Time; 
+_00d: NOP   0; 
+NETWORK
+TITLE =PLC Time - Seconds Past Midnight for HMI Time Display.
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      L     "HW".PLC_Hour; 
+      L     L#3600; 
+      *D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _00e; 
+      L     "HW".PLC_Minute; 
+      L     L#60; 
+      *D    ; 
+      T     "HW".TempDINT2; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_00e: A     BR; 
+      )     ; 
+      JNB   _00f; 
+      L     "HW".TempDINT1; 
+      L     "HW".TempDINT2; 
+      +D    ; 
+      T     "HW".TempDINT1; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_00f: A     BR; 
+      )     ; 
+      JNB   _010; 
+      L     "HW".PLC_Second; 
+      L     "HW".TempDINT1; 
+      +D    ; 
+      T     "HW".TempDINT2; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_010: A     BR; 
+      )     ; 
+      JNB   _011; 
+      L     "HW".TempDINT2; 
+      DTR   ; 
+      T     "HR".PLC_SecOfDay; 
+_011: NOP   0; 
+NETWORK
+TITLE =Time Of Day 00:00 Pulse, On 1 Scan 
+
+      A(    ; 
+      L     "HW".PLC_Hour; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      A(    ; 
+      L     "HW".PLC_Minute; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      FP    "HB".TOD_0000Last; 
+      =     "HB".TOD_0000; 
+NETWORK
+TITLE =Time Of Day Pulse 06:00, On 1 Scan
+
+      A(    ; 
+      L     "HW".PLC_Hour; 
+      L     L#6; 
+      ==D   ; 
+      )     ; 
+      A(    ; 
+      L     "HW".PLC_Minute; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      FP    "HB".TOD_0600Last; 
+      =     "HB".TOD_0600; 
+NETWORK
+TITLE =Time Of Day Pulse 09:00, On 1 Scan
+
+      A(    ; 
+      L     "HW".PLC_Hour; 
+      L     L#9; 
+      ==D   ; 
+      )     ; 
+      A(    ; 
+      L     "HW".PLC_Minute; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      FP    "HB".TOD_0900Last; 
+      =     "HB".TOD_0900; 
+NETWORK
+TITLE =Assign AI Wire Break Default Values
+
+      A(    ; 
+      L     -8.888000e+003; 
+      T     "HR".AI_Default_Low; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _012; 
+      L     8.888000e+003; 
+      T     "HR".AI_Default_High; 
+_012: NOP   0; 
+END_FUNCTION
+
+FUNCTION "I TO DBI" : VOID
+TITLE =READING INPUTS
+NAME : ITODBI
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =
+//  MAPPING OF THE REAL INPUTS TO 
+// THE DATA BLOCK OF INPUTS FOR PROGRAM
+      A     "SysSimulation"; 
+      BEC   ; 
+
+      L     ID     8; 
+      T     DB101.DBD    8; 
+END_FUNCTION
+
+FUNCTION "ANALOG INPUTS" : VOID
+TITLE =  
+//Raw Analog inputs IWxxx are all 4-20mA, ranged 0 to 6C00 Hex therefore;
+//4mA = 0 Hex = 0 Decimal
+//20mA = 6C00 Hex = 27648 Decimal
+//************************************************************************
+NAME : ANAIN
+VERSION : 0.1
+
+
+VAR_TEMP
+  Spare_AI : REAL ;	
+  MW_Sqrd : REAL ;	
+  MVAR_Sqrd : REAL ;	
+  MW_Sqrd_plus_MVAR_Sqrd : REAL ;	
+  Sqrt_MW_Sqrd_P_MVAR_Sqrd : REAL ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   128,
+           EuMin                    := 0.000000e+000,
+           EuMax                    := 1.000000e+002,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".IW128,
+           Out_Range                := "ORI".IW128,
+           In                       := "AI".IW128);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   130,
+           EuMin                    := 2.640000e+001,
+           EuMax                    := 3.640000e+001,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".C8_WBFPLVL,
+           Out_Range                := "ORI".C8_ORFPLVL,
+           In                       := "AI".C8_FPLVL);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   132,
+           EuMin                    := 3.383000e+001,
+           EuMax                    := 3.019000e+001,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".C8_WBFPWG_POS,
+           Out_Range                := "ORI".C8_ORFPWG_POS,
+           In                       := "AI".C8_FPWG_POS);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   134,
+           EuMin                    := 0.000000e+000,
+           EuMax                    := 1.000000e+002,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".IW134,
+           Out_Range                := "ORI".IW134,
+           In                       := "AI".IW134);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   136,
+           EuMin                    := 0.000000e+000,
+           EuMax                    := 1.000000e+002,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".IW136,
+           Out_Range                := "ORI".IW136,
+           In                       := "AI".IW136);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   138,
+           EuMin                    := 0.000000e+000,
+           EuMax                    := 1.000000e+002,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".IW138,
+           Out_Range                := "ORI".IW138,
+           In                       := "AI".IW138);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   140,
+           EuMin                    := 0.000000e+000,
+           EuMax                    := 1.000000e+002,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".IW140,
+           Out_Range                := "ORI".IW140,
+           In                       := "AI".IW140);
+NETWORK
+TITLE =  
+
+      CALL "ANALOG INPUT TO REAL" (
+           RawIn                    := IW   142,
+           EuMin                    := 0.000000e+000,
+           EuMax                    := 1.000000e+002,
+           FailValue                := "HR".AI_Default_Low,
+           Wire_Break               := "WBI".IW142,
+           Out_Range                := "ORI".IW142,
+           In                       := "AI".IW142);
+END_FUNCTION
+
+FUNCTION "MAIN SEQUENCE" : VOID
+TITLE =SEQUENCE STEP NUMBER CONTROL
+//
+NAME : SEQUENCE
+VERSION : 0.0
+
+
+VAR_TEMP
+  temp : BOOL ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =Condition that force sequence to step 0
+
+      A(    ; 
+      ON    "I".C8_FPWG_AUTOMODE; 
+      ON    "I".C8_FPLOG1_AUTOMODE; 
+      ON    "I".C8_FPLOG2_AUTOMODE; 
+      ON    "I".C8_FPINTAKE_AUTOMODE; 
+      O(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#2; 
+      <D    ; 
+      )     ; 
+      O     "HB".C8_FP_RESET; 
+      O     "I".C8_FPWG_MOT_OVL; 
+      O     "I".C8_FPLOG1_MOT_OVL; 
+      O     "I".C8_FPLOG2_MOT_OVL; 
+      O     "I".C8_FPWG_MANMODE; 
+      O     "I".C8_FPLOG1_ESTOP; 
+      O     "I".C8_FPLOG2_ESTOP; 
+      O     "I".C8_FPINTAKE_ESTOP; 
+      )     ; 
+      JNB   _001; 
+      L     L#0; 
+      T     "HW".C8_FPG_STEP; 
+_001: NOP   0; 
+NETWORK
+TITLE =Fish Pass Motor OverLoad Latch Alarm
+
+      A(    ; 
+      O     "I".C8_FPWG_MOT_OVL; 
+      O     "I".C8_FPLOG1_MOT_OVL; 
+      O     "I".C8_FPLOG2_MOT_OVL; 
+      O     "HB".C8_FP_MOT_OVL; 
+      )     ; 
+      AN    "HB".C8_FP_MOT_OVL_RS; 
+      =     "HB".C8_FP_MOT_OVL; 
+NETWORK
+TITLE =Fish Pass EStop Latch Alarm
+
+      A(    ; 
+      O     "I".C8_FPWG_ESTOP; 
+      O     "I".C8_FPLOG1_ESTOP; 
+      O     "I".C8_FPLOG2_ESTOP; 
+      O     "I".C8_FPINTAKE_ESTOP; 
+      O     "HB".C8_FP_ESTOP; 
+      )     ; 
+      AN    "HB".C8_FP_ESTOP_RS; 
+      =     "HB".C8_FP_ESTOP; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      AN    "HB".C8_FPTIME_MAN_DEFAULT; 
+      JNB   _002; 
+      L     L#8550; 
+      T     "HW".C8_FPESC_DES_SP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_002: A     BR; 
+      )     ; 
+      JNB   _003; 
+      L     L#300; 
+      T     "HW".Step8TimePre_DES; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_003: A     BR; 
+      )     ; 
+      JNB   _004; 
+      L     L#4020; 
+      T     "HW".C8_FPFISH_DES_SP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_004: A     BR; 
+      )     ; 
+      JNB   _005; 
+      L     L#10; 
+      T     "HW".C8_FPLOG_CRA_SP; 
+_005: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      AN    "HB".C8_FPTIME_MAN_DEFAULT; 
+      JNB   _006; 
+      L     L#4020; 
+      T     "HW".C8_FPESC_ASC_SP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_006: A     BR; 
+      )     ; 
+      JNB   _007; 
+      L     L#300; 
+      T     "HW".Step8TimePre_ASC; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_007: A     BR; 
+      )     ; 
+      JNB   _008; 
+      L     L#8550; 
+      T     "HW".C8_FPFISH_ASC_SP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_008: A     BR; 
+      )     ; 
+      JNB   _009; 
+      L     L#30; 
+      T     "HW".Step6TimePre; 
+_009: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      AN    "I".C8_FP_DIRECTION; 
+      JNB   _00a; 
+      L     "HW".Step2TimePre_ASC; 
+      T     "HW".Step2TimePre; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_00a: A     BR; 
+      )     ; 
+      JNB   _00b; 
+      L     "HW".C8_FPESC_ASC_SP; 
+      T     "HW".Step5TimePre; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_00b: A     BR; 
+      )     ; 
+      JNB   _00c; 
+      L     "HW".Step8TimePre_ASC; 
+      T     "HW".Step8TimePre; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_00c: A     BR; 
+      )     ; 
+      JNB   _00d; 
+      L     "HW".C8_FPFISH_ASC_SP; 
+      T     "HW".Step9TimePre; 
+_00d: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      A(    ; 
+      A(    ; 
+      A     "I".C8_FP_DIRECTION; 
+      JNB   _00e; 
+      L     "HW".Step2TimePre_DES; 
+      T     "HW".Step2TimePre; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_00e: A     BR; 
+      )     ; 
+      JNB   _00f; 
+      L     "HW".C8_FPESC_DES_SP; 
+      T     "HW".Step5TimePre; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_00f: A     BR; 
+      )     ; 
+      JNB   _010; 
+      L     "HW".Step8TimePre_DES; 
+      T     "HW".Step8TimePre; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_010: A     BR; 
+      )     ; 
+      JNB   _011; 
+      L     "HW".C8_FPFISH_DES_SP; 
+      T     "HW".Step9TimePre; 
+_011: NOP   0; 
+NETWORK
+TITLE =
+
+      L     "HW".C8_FPLOG_CRA_SP; 
+      T     "HW".Step4TimePre; 
+      NOP   0; 
+NETWORK
+TITLE =Step Transitions
+
+      O(    ; 
+      A     "HB".C8_Off; 
+      A     "HB".StepTransOk; 
+      JNB   _012; 
+      L     L#1; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_012: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step01; 
+      A     "HB".StepTransOk; 
+      JNB   _013; 
+      L     L#2; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_013: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step02; 
+      A     "HB".StepTransOk; 
+      JNB   _014; 
+      L     L#3; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_014: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step03; 
+      A     "HB".StepTransOk; 
+      JNB   _015; 
+      L     L#4; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_015: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step04; 
+      A     "HB".StepTransOk; 
+      JNB   _016; 
+      L     L#5; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_016: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step05; 
+      A     "HB".StepTransOk; 
+      JNB   _017; 
+      L     L#6; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_017: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step06; 
+      A     "HB".StepTransOk; 
+      JNB   _018; 
+      L     L#7; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_018: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step07; 
+      A     "HB".StepTransOk; 
+      JNB   _019; 
+      L     L#8; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_019: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step08; 
+      A     "HB".StepTransOk; 
+      JNB   _01a; 
+      L     L#9; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_01a: A     BR; 
+      )     ; 
+      O(    ; 
+      A     "HB".C8_Step09; 
+      A     "HB".StepTransOk; 
+      JNB   _01b; 
+      L     L#1; 
+      T     "HW".C8_FPG_STEP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_01b: A     BR; 
+      )     ; 
+      =     #temp; 
+NETWORK
+TITLE =Set Step Preset Time
+
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      JNB   _01c; 
+      L     "HW".Step0TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_01c: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      JNB   _01d; 
+      L     "HW".Step1TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_01d: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#2; 
+      ==D   ; 
+      )     ; 
+      JNB   _01e; 
+      L     "HW".Step2TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_01e: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#3; 
+      ==D   ; 
+      )     ; 
+      JNB   _01f; 
+      L     "HW".Step3TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_01f: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#4; 
+      ==D   ; 
+      )     ; 
+      JNB   _020; 
+      L     "HW".Step4TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_020: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#5; 
+      ==D   ; 
+      )     ; 
+      JNB   _021; 
+      L     "HW".Step5TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_021: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#6; 
+      ==D   ; 
+      )     ; 
+      JNB   _022; 
+      L     "HW".Step6TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_022: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#7; 
+      ==D   ; 
+      )     ; 
+      JNB   _023; 
+      L     "HW".Step7TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_023: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#8; 
+      ==D   ; 
+      )     ; 
+      JNB   _024; 
+      L     "HW".Step8TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_024: A     BR; 
+      )     ; 
+      O(    ; 
+      A(    ; 
+      L     "HW".C8_FPG_STEP; 
+      L     L#9; 
+      ==D   ; 
+      )     ; 
+      JNB   _025; 
+      L     "HW".Step9TimePre; 
+      T     "HW".C8_FP_STEPTIME; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_025: A     BR; 
+      )     ; 
+      =     #temp; 
+NETWORK
+TITLE =Sequence step has changed
+
+      L     "HW".C8_FPG_STEP; 
+      L     "HW".C8_FPG_STEP_LAST; 
+      <>D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      BLD   102; 
+      =     "StepChanged"; 
+      A     L      1.0; 
+      JNB   _026; 
+      L     "HW".C8_FPG_STEP; 
+      T     "HW".C8_FPG_STEP_LAST; 
+_026: NOP   0; 
+NETWORK
+TITLE =Update Preset Time on Step Change
+
+      A     "StepChanged"; 
+      JNB   _027; 
+      L     "HW".C8_FP_STEPTIME; 
+      T     "HW".C8_FP_STEPTIME_REM; 
+_027: NOP   0; 
+NETWORK
+TITLE =Step Time Remaining
+
+      A     "Pulse1_0"; 
+      A(    ; 
+      L     "HW".C8_FP_STEPTIME_REM; 
+      L     L#1; 
+      >=D   ; 
+      )     ; 
+      JNB   _028; 
+      L     "HW".C8_FP_STEPTIME_REM; 
+      L     L#1; 
+      -D    ; 
+      T     "HW".C8_FP_STEPTIME_REM; 
+_028: NOP   0; 
+NETWORK
+TITLE =Set Step 0 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#0; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _029; 
+      L     B#16#1; 
+      T     DB104.DBB    0; 
+_029: NOP   0; 
+      A     L      1.0; 
+      JNB   _02a; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_02a: NOP   0; 
+NETWORK
+TITLE =Set Step 1 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#1; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _02b; 
+      L     B#16#2; 
+      T     DB104.DBB    0; 
+_02b: NOP   0; 
+      A     L      1.0; 
+      JNB   _02c; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_02c: NOP   0; 
+NETWORK
+TITLE =Set Step 2 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#2; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _02d; 
+      L     B#16#4; 
+      T     DB104.DBB    0; 
+_02d: NOP   0; 
+      A     L      1.0; 
+      JNB   _02e; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_02e: NOP   0; 
+NETWORK
+TITLE =Set Step 3 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#3; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _02f; 
+      L     B#16#8; 
+      T     DB104.DBB    0; 
+_02f: NOP   0; 
+      A     L      1.0; 
+      JNB   _030; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_030: NOP   0; 
+NETWORK
+TITLE =Set Step 4 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#4; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _031; 
+      L     B#16#10; 
+      T     DB104.DBB    0; 
+_031: NOP   0; 
+      A     L      1.0; 
+      JNB   _032; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_032: NOP   0; 
+NETWORK
+TITLE =Set Step 5 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#5; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _033; 
+      L     B#16#20; 
+      T     DB104.DBB    0; 
+_033: NOP   0; 
+      A     L      1.0; 
+      JNB   _034; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_034: NOP   0; 
+NETWORK
+TITLE =Set Step 6 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#6; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _035; 
+      L     B#16#40; 
+      T     DB104.DBB    0; 
+_035: NOP   0; 
+      A     L      1.0; 
+      JNB   _036; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_036: NOP   0; 
+NETWORK
+TITLE =Set Step 7 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#7; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _037; 
+      L     B#16#80; 
+      T     DB104.DBB    0; 
+_037: NOP   0; 
+      A     L      1.0; 
+      JNB   _038; 
+      L     B#16#0; 
+      T     DB104.DBB    1; 
+_038: NOP   0; 
+NETWORK
+TITLE =Set Step 8 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#8; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _039; 
+      L     B#16#0; 
+      T     DB104.DBB    0; 
+_039: NOP   0; 
+      A     L      1.0; 
+      JNB   _03a; 
+      L     B#16#1; 
+      T     DB104.DBB    1; 
+_03a: NOP   0; 
+NETWORK
+TITLE =Set Step 9 Bit
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#9; 
+      ==D   ; 
+      =     L      1.0; 
+      A     L      1.0; 
+      JNB   _03b; 
+      L     B#16#0; 
+      T     DB104.DBB    0; 
+_03b: NOP   0; 
+      A     L      1.0; 
+      JNB   _03c; 
+      L     B#16#2; 
+      T     DB104.DBB    1; 
+_03c: NOP   0; 
+NETWORK
+TITLE =Display Step message on HMI
+
+      L     "HW".C8_FPG_STEP; 
+      L     L#5100; 
+      +D    ; 
+      T     "HW".STEP_NUM_MESS; 
+      NOP   0; 
+NETWORK
+TITLE =Start up Time Exceeded
+
+      L     "HW".C8_FP_STEPTIME_REM; 
+      L     L#0; 
+      ==D   ; 
+      =     "HB".C8_StepTimeComp; 
+NETWORK
+TITLE =Fish Pass Motor OverLoad Reset
+
+      A     "AlwaysOn"; 
+      R     "HB".C8_FP_MOT_OVL_RS; 
+NETWORK
+TITLE =Fish Pass ESTOP Resets
+
+      A     "AlwaysOn"; 
+      R     "HB".C8_FP_ESTOP_RS; 
+END_FUNCTION
+
+FUNCTION "TRANSITIONS" : VOID
+TITLE =
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =
+
+      L     L#5999; 
+      T     "HW".Blank_msg; 
+      NOP   0; 
+NETWORK
+TITLE =CLEAR TRANSITION MESSAGE AT THE START OF EVERY SCAN
+
+      L     "HW".Blank_msg; 
+      T     "HW".Tran_Msg; 
+      NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Off; 
+      =     L      0.0; 
+      A     L      0.0; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#2; 
+      <D    ; 
+      )     ; 
+      JNB   _001; 
+      L     L#4000; 
+      T     "HW".Tran_Msg; 
+_001: NOP   0; 
+      A     L      0.0; 
+      AN    "I".C8_FPWG_AUTOMODE; 
+      JNB   _002; 
+      L     L#1085; 
+      T     "HW".Tran_Msg; 
+_002: NOP   0; 
+      A     L      0.0; 
+      AN    "I".C8_FPLOG1_AUTOMODE; 
+      JNB   _003; 
+      L     L#1096; 
+      T     "HW".Tran_Msg; 
+_003: NOP   0; 
+      A     L      0.0; 
+      AN    "I".C8_FPLOG2_AUTOMODE; 
+      JNB   _004; 
+      L     L#1105; 
+      T     "HW".Tran_Msg; 
+_004: NOP   0; 
+      A     L      0.0; 
+      AN    "I".C8_FPINTAKE_AUTOMODE; 
+      JNB   _005; 
+      L     L#1107; 
+      T     "HW".Tran_Msg; 
+_005: NOP   0; 
+      A     L      0.0; 
+      A     "HB".C8_FP_MOT_OVL; 
+      JNB   _006; 
+      L     L#3062; 
+      T     "HW".Tran_Msg; 
+_006: NOP   0; 
+      A     L      0.0; 
+      A     "HB".C8_FP_ESTOP; 
+      JNB   _007; 
+      L     L#3063; 
+      T     "HW".Tran_Msg; 
+_007: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step01; 
+      =     L      0.0; 
+      A     L      0.0; 
+      AN    "HB".C8_FPLOG1_CLOSELS_1; 
+      JNB   _008; 
+      L     L#1091; 
+      T     "HW".Tran_Msg; 
+_008: NOP   0; 
+      A     L      0.0; 
+      AN    "HB".C8_FPLOG2_CLOSELS_1; 
+      JNB   _009; 
+      L     L#1101; 
+      T     "HW".Tran_Msg; 
+_009: NOP   0; 
+      A     L      0.0; 
+      AN    "I".C8_FPWG_CLOSELS; 
+      JNB   _00a; 
+      L     L#1081; 
+      T     "HW".Tran_Msg; 
+_00a: NOP   0; 
+NETWORK
+TITLE =
+
+      L     2.740000e+001; 
+      T     "HR".C8_FPLVL_SP; 
+      NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step02; 
+      A(    ; 
+      L     "AI".C8_FPLVL; 
+      L     "HR".C8_FPLVL_SP; 
+      >=R   ; 
+      )     ; 
+      L     S5T#10S; 
+      SD    T     11; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     T     11; 
+      =     "HB".C8_FPWL_WGOPNLVL; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step02; 
+      AN    "HB".C8_FPWL_WGOPNLVL; 
+      JNB   _00b; 
+      L     L#3125; 
+      T     "HW".Tran_Msg; 
+_00b: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step03; 
+      A(    ; 
+      L     "AI".C8_FPWG_POS; 
+      L     "HR".C8_FPWG_SP_OPEN; 
+      >R    ; 
+      )     ; 
+      JNB   _00c; 
+      L     L#4002; 
+      T     "HW".Tran_Msg; 
+_00c: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step04; 
+      AN    "HB".C8_StepTimeComp; 
+      JNB   _00d; 
+      L     L#3041; 
+      T     "HW".Tran_Msg; 
+_00d: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step05; 
+      AN    "HB".C8_StepTimeComp; 
+      JNB   _00e; 
+      L     L#3041; 
+      T     "HW".Tran_Msg; 
+_00e: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step06; 
+      AN    "HB".C8_StepTimeComp; 
+      JNB   _00f; 
+      L     L#3041; 
+      T     "HW".Tran_Msg; 
+_00f: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step07; 
+      AN    "I".C8_FPWG_CLOSELS; 
+      JNB   _010; 
+      L     L#1081; 
+      T     "HW".Tran_Msg; 
+_010: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step08; 
+      A(    ; 
+      A     "HB".C8_FPLOG_SEL; 
+      AN    "HB".C8_FPLOG1_OPENLS_1; 
+      O     ; 
+      AN    "HB".C8_FPLOG_SEL; 
+      AN    "HB".C8_FPLOG2_OPENLS_1; 
+      )     ; 
+      JNB   _011; 
+      L     L#4001; 
+      T     "HW".Tran_Msg; 
+_011: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step09; 
+      =     L      0.0; 
+      A     L      0.0; 
+      AN    "HB".C8_StepTimeComp; 
+      JNB   _012; 
+      L     L#3041; 
+      T     "HW".Tran_Msg; 
+_012: NOP   0; 
+      A     L      0.0; 
+      A(    ; 
+      A     "HB".C8_FPLOG_SEL; 
+      AN    "HB".C8_FPLOG2_OPENLS_1; 
+      O     ; 
+      AN    "HB".C8_FPLOG_SEL; 
+      AN    "HB".C8_FPLOG1_OPENLS_1; 
+      )     ; 
+      JNB   _013; 
+      L     L#4001; 
+      T     "HW".Tran_Msg; 
+_013: NOP   0; 
+NETWORK
+TITLE =Step Transition Conditions OK
+
+      L     "HW".Tran_Msg; 
+      L     "HW".Blank_msg; 
+      ==D   ; 
+      =     "HB".StepTransOk; 
+NETWORK
+TITLE =Requierements for transition, Mapping for Screen
+//Mapping for screen to animate step transitions on Experion.
+      A     "HB".C8_Step01; 
+      S     "HB".C8_Trans0Ok; 
+      A     "HB".C8_Step02; 
+      S     "HB".C8_Trans1Ok; 
+      A     "HB".C8_Step03; 
+      S     "HB".C8_Trans2Ok; 
+      A     "HB".C8_Step04; 
+      S     "HB".C8_Trans3Ok; 
+      A     "HB".C8_Step05; 
+      S     "HB".C8_Trans4Ok; 
+      A     "HB".C8_Step06; 
+      S     "HB".C8_Trans5Ok; 
+      A     "HB".C8_Step07; 
+      S     "HB".C8_Trans6Ok; 
+      A     "HB".C8_Step08; 
+      S     "HB".C8_Trans7Ok; 
+      A     "HB".C8_Step09; 
+      S     "HB".C8_Trans8Ok; 
+//;
+
+//;
+//;
+      L     0; 
+      AN    "HB".C8_Off; // IF Unit Off then
+      JC    M057; 
+      T     DB104.DBW    2; //Reset TransOK
+M057: NOP   0; 
+
+
+      AN    "HB".C8_Step01; 
+      JC    M058; 
+      L     1; 
+      T     DB104.DBB    2; 
+      L     0; 
+      T     DB104.DBB    3; 
+M058: NOP   0; 
+
+
+END_FUNCTION
+
+FUNCTION "Lower Gates" : VOID
+TITLE =
+VERSION : 0.1
+
+
+VAR_TEMP
+  OpenGateCond : BOOL ;	
+  StopOpenGateCond : BOOL ;	
+  CloseGateCond : BOOL ;	
+  StopCloseGateCond : BOOL ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =Gate Selection
+
+      L     4.530000e+000; 
+      T     "HR".C8_FPTR_SP; 
+      NOP   0; 
+NETWORK
+TITLE =Fish Pass Lower Gate Selection
+
+      L     "HR".C6_TailRaceLevel; 
+      L     "HR".C8_FPTR_SP; 
+      >R    ; 
+      =     "HB".C8_FPLOG_SEL; 
+NETWORK
+TITLE =
+
+      A     "I".C8_FPLOG1_OPENLS; 
+      L     S5T#500MS; 
+      SD    T      7; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     T      7; 
+      =     "HB".C8_FPLOG1_OPENLS_1; 
+NETWORK
+TITLE =Fish Pass Weir Gate Open Command  
+
+      A(    ; 
+      A(    ; 
+      O     "HB".C8_Step04; 
+      O     "HB".C8_Step06; 
+      O     "HB".C8_Step08; 
+      )     ; 
+      A     "HB".C8_FPLOG_SEL; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      A     "HB".C8_FPLOG1_HMIOPENCMD; 
+      AN    "HB".C8_FPLOG1_HMISTOPCMD; 
+      O     ; 
+      A     "HB".C8_Step09; 
+      AN    "HB".C8_FPLOG_SEL; 
+      )     ; 
+      AN    "HB".C8_FPLOG1_OPENLS_1; 
+      AN    "Q".C8_FPLOG1_STOPCMD; 
+      =     "Q".C8_FPLOG1_OPENCMD; 
+NETWORK
+TITLE =Fish Pass HMI Weir Gate Closed Command
+
+      A     "Q".C8_FPLOG1_OPENCMD; 
+      =     "HB".C8_FPLOG1_HMIOPENCMD; 
+NETWORK
+TITLE =Stop Gate Command
+
+      A     "I".C8_FPLOG1_CLOSELS; 
+      L     S5T#500MS; 
+      SD    T      8; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     T      8; 
+      =     "HB".C8_FPLOG1_CLOSELS_1; 
+NETWORK
+TITLE =Fish Pass Lower Gate 1 Closed Command    
+
+      A(    ; 
+      O     "HB".C8_Step01; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      A     "HB".C8_FPLOG1_HMICLOSECMD; 
+      AN    "HB".C8_FPLOG1_HMISTOPCMD; 
+      )     ; 
+      AN    "HB".C8_FPLOG1_CLOSELS_1; 
+      AN    "Q".C8_FPLOG1_STOPCMD; 
+      =     "Q".C8_FPLOG1_CLOSECMD; 
+NETWORK
+TITLE =Open Gate 1 Selection
+
+      A     "Q".C8_FPLOG1_CLOSECMD; 
+      =     "HB".C8_FPLOG1_HMICLOSECMD; 
+NETWORK
+TITLE =Fish Pass HMI Weir Gate Closed Command
+
+      A(    ; 
+      AN    "Q".C8_FPLOG1_OPENCMD; 
+      FP    "HB".C8_FPLOG1_OPENCMD_Ons; 
+      O(    ; 
+      AN    "Q".C8_FPLOG1_CLOSECMD; 
+      FP    "HB".C8_FPLOG1_CLOSECMD_Ons; 
+      )     ; 
+      )     ; 
+      L     S5T#2S; 
+      SF    "LG1Stop_Tmr"; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     "LG1Stop_Tmr"; 
+      =     "Q".C8_FPLOG1_STOPCMD; 
+NETWORK
+TITLE =
+
+      A     "I".C8_FPLOG2_OPENLS; 
+      L     S5T#500MS; 
+      SD    T      9; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     T      9; 
+      =     "HB".C8_FPLOG2_OPENLS_1; 
+NETWORK
+TITLE =Fish Pass Weir Gate Open Command  
+
+      A(    ; 
+      A(    ; 
+      O     "HB".C8_Step04; 
+      O     "HB".C8_Step06; 
+      O     "HB".C8_Step08; 
+      )     ; 
+      AN    "HB".C8_FPLOG_SEL; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      A     "HB".C8_FPLOG2_HMIOPENCMD; 
+      AN    "HB".C8_FPLOG2_HMISTOPCMD; 
+      O     ; 
+      A     "HB".C8_Step09; 
+      A     "HB".C8_FPLOG_SEL; 
+      )     ; 
+      AN    "HB".C8_FPLOG2_OPENLS_1; 
+      AN    "Q".C8_FPLOG2_STOPCMD; 
+      =     "Q".C8_FPLOG2_OPENCMD; 
+NETWORK
+TITLE =Fish Pass HMI Weir Gate Closed Command
+
+      A     "Q".C8_FPLOG2_OPENCMD; 
+      =     "HB".C8_FPLOG2_HMIOPENCMD; 
+NETWORK
+TITLE =Stop Gate Command
+
+      A     "I".C8_FPLOG2_CLOSELS; 
+      L     S5T#500MS; 
+      SD    T     12; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     T     12; 
+      =     "HB".C8_FPLOG2_CLOSELS_1; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      O     "HB".C8_Step01; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      A     "HB".C8_FPLOG2_HMICLOSECMD; 
+      AN    "HB".C8_FPLOG2_HMISTOPCMD; 
+      )     ; 
+      AN    "HB".C8_FPLOG2_CLOSELS_1; 
+      AN    "Q".C8_FPLOG2_STOPCMD; 
+      =     "Q".C8_FPLOG2_CLOSECMD; 
+NETWORK
+TITLE =
+
+      A     "Q".C8_FPLOG2_CLOSECMD; 
+      =     "HB".C8_FPLOG2_HMICLOSECMD; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      AN    "Q".C8_FPLOG2_OPENCMD; 
+      FP    "HB".C8_FPLOG2_OPENCMD_Ons; 
+      O(    ; 
+      AN    "Q".C8_FPLOG2_CLOSECMD; 
+      FP    "HB".C8_FPLOG2_CLOSECMD_Ons; 
+      )     ; 
+      )     ; 
+      L     S5T#2S; 
+      SF    "LG2Stop_Tmr"; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     "LG2Stop_Tmr"; 
+      =     "Q".C8_FPLOG2_STOPCMD; 
+END_FUNCTION
+
+FUNCTION "Weir Gate" : VOID
+TITLE =
+VERSION : 0.1
+
+
+VAR_TEMP
+  HR_LEVEL : REAL ;	
+  OpenGateCond : BOOL ;	
+  StopOpenGateCond : BOOL ;	
+  CloseGateCond : BOOL ;	
+  StopCloseGateCond : BOOL ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =Calculate HR Setpoints
+
+      A(    ; 
+      A(    ; 
+      L     3.050000e-001; 
+      T     "HR".C8_FPWG_SP; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _001; 
+      L     5.000000e-002; 
+      T     "HR".C8_FPWG_SP_LOW; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_001: A     BR; 
+      )     ; 
+      JNB   _002; 
+      L     5.000000e-002; 
+      T     "HR".C8_FPWG_SP_High; 
+_002: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      A(    ; 
+      L     "HR".C6_HeadRaceLevel; 
+      L     "HR".C8_FPWG_SP; 
+      -R    ; 
+      T     "HR".C8_FPWG_SP_OPEN; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _003; 
+      L     "HR".C8_FPWG_SP_OPEN; 
+      L     "HR".C8_FPWG_SP_LOW; 
+      -R    ; 
+      T     "HR".C8_FPWG_DOWN_LIMIT; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_003: A     BR; 
+      )     ; 
+      JNB   _004; 
+      L     "HR".C8_FPWG_SP_OPEN; 
+      L     "HR".C8_FPWG_SP_High; 
+      +R    ; 
+      T     "HR".C8_FPWG_UP_LIMIT; 
+_004: NOP   0; 
+NETWORK
+TITLE =Open Gate Conditions
+
+      O(    ; 
+      L     "AI".C8_FPWG_POS; 
+      L     "HR".C8_FPWG_UP_LIMIT; 
+      >=R   ; 
+      )     ; 
+      O     ; 
+      A     #OpenGateCond; 
+      AN    #StopOpenGateCond; 
+      =     #OpenGateCond; 
+NETWORK
+TITLE =Stop Opening Gate Condition
+
+      L     "AI".C8_FPWG_POS; 
+      L     "HR".C8_FPWG_SP_OPEN; 
+      ==R   ; 
+      =     #StopOpenGateCond; 
+NETWORK
+TITLE =Fish Pass Weir Gate Open Command  
+
+      A(    ; 
+      O     "HB".C8_Step03; 
+      O     ; 
+      A     "HB".C8_Step05; 
+      A     #OpenGateCond; 
+      AN    #StopOpenGateCond; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      A     "I".C8_FPWG_OPENPS; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      A     "HB".C8_FPWG_HMIOPENCMD; 
+      AN    "HB".C8_FPWG_HMISTOPCMD; 
+      )     ; 
+      AN    "I".C8_FPWG_OPENLS; 
+      A     "Q".C8_FPWG_STOPCMD; 
+      =     "Q".C8_FPWG_OPENCMD; 
+NETWORK
+TITLE =Fish Pass HMI Weir Gate Closed Command
+
+      A     "Q".C8_FPWG_OPENCMD; 
+      =     "HB".C8_FPWG_HMIOPENCMD; 
+NETWORK
+TITLE =Close Gate Conditions
+
+      O(    ; 
+      L     "AI".C8_FPWG_POS; 
+      L     "HR".C8_FPWG_DOWN_LIMIT; 
+      <=R   ; 
+      )     ; 
+      O     ; 
+      A     #CloseGateCond; 
+      AN    #StopCloseGateCond; 
+      =     #CloseGateCond; 
+NETWORK
+TITLE =Stop Closing Gate Condition
+
+      L     "AI".C8_FPWG_POS; 
+      L     "HR".C8_FPWG_SP_OPEN; 
+      ==R   ; 
+      =     #StopCloseGateCond; 
+NETWORK
+TITLE =Fish Pass Weir Gate Open Command  
+
+      A(    ; 
+      O     "HB".C8_Step07; 
+      O     ; 
+      A     "HB".C8_Step05; 
+      A     #CloseGateCond; 
+      AN    #StopCloseGateCond; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#0; 
+      ==D   ; 
+      )     ; 
+      A     "I".C8_FPWG_CLOSEPS; 
+      O     ; 
+      A(    ; 
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      )     ; 
+      A     "HB".C8_FPWG_HMICLOSECMD; 
+      AN    "HB".C8_FPWG_HMISTOPCMD; 
+      O     "HB".C8_Step01; 
+      O     ; 
+      A     "HB".C8_Step03; 
+      A     #CloseGateCond; 
+      )     ; 
+      AN    "I".C8_FPWG_CLOSELS; 
+      A     "Q".C8_FPWG_STOPCMD; 
+      =     "Q".C8_FPWG_CLOSECMD; 
+NETWORK
+TITLE =Fish Pass HMI Weir Gate Closed Command
+
+      A     "Q".C8_FPWG_CLOSECMD; 
+      =     "HB".C8_FPWG_HMICLOSECMD; 
+NETWORK
+TITLE =Stop Gate Command
+
+      A(    ; 
+      A(    ; 
+      AN    "Q".C8_FPWG_OPENCMD; 
+      FP    "HB".C8_FPWG_OPENCMD_Ons; 
+      O(    ; 
+      AN    "Q".C8_FPWG_CLOSECMD; 
+      FP    "HB".C8_FPWG_CLOSECMD_Ons; 
+      )     ; 
+      )     ; 
+      L     S5T#2S; 
+      SF    "WGStop_Tmr"; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     "WGStop_Tmr"; 
+      )     ; 
+      NOT   ; 
+      =     "Q".C8_FPWG_STOPCMD; 
+NETWORK
+TITLE =Startup Time Counter
+//Code Used When Angular Transmitter Failed
+      A     "Q".C8_FPWG_CLOSECMD; 
+      A     "Pulse1_0"; 
+      CU    C      2; 
+      A     "Q".C8_FPWG_OPENCMD; 
+      A     "Pulse1_0"; 
+      CD    C      2; 
+      A     "I".C8_FPWG_CLOSELS; 
+      L     C#660; 
+      S     C      2; 
+      A     "I".C8_FPWG_OPENLS; 
+      R     C      2; 
+      L     C      2; 
+      T     "HW".C8_FPWG_POS_1; 
+      NOP   0; 
+      NOP   0; 
+NETWORK
+TITLE =
+//Code Used When Angular Transmitter Failed
+      A(    ; 
+      L     "HW".C8_FPWG_POS_1; 
+      T     "HW".C8_FPWG_POS_2; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _005; 
+      L     "HW".C8_FPWG_POS_2; 
+      DTR   ; 
+      T     "HR".C8_FPWG_POS_2; 
+_005: NOP   0; 
+NETWORK
+TITLE =
+//Code Used When Angular Transmitter Failed
+      A(    ; 
+      A(    ; 
+      L     "HR".C8_FPWG_POS_2; 
+      L     6.600000e+002; 
+      /R    ; 
+      T     "HR".Spare_44; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+      A     BR; 
+      )     ; 
+      JNB   _006; 
+      L     "HR".Spare_44; 
+      L     3.640000e+000; 
+      *R    ; 
+      T     "HR".Spare_48; 
+      AN    OV; 
+      SAVE  ; 
+      CLR   ; 
+_006: A     BR; 
+      )     ; 
+      JNB   _007; 
+      L     "HR".Spare_48; 
+      L     3.019000e+001; 
+      +R    ; 
+      T     "HR".Spare_52; 
+_007: NOP   0; 
+END_FUNCTION
+
+FUNCTION "Background Processes" : VOID
+TITLE =
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =
+
+      AN    "HB".C8_FP_MODE_Man; 
+      AN    "HB".C8_FP_MODE_Auto; 
+      JNB   _001; 
+      L     L#0; 
+      T     "HW".C8_FP_MODE; 
+_001: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_FP_MODE_Man; 
+      AN    "HB".C8_FP_MODE_Auto; 
+      JNB   _002; 
+      L     L#1; 
+      T     "HW".C8_FP_MODE; 
+_002: NOP   0; 
+NETWORK
+TITLE =
+
+      AN    "HB".C8_FP_MODE_Man; 
+      A     "HB".C8_FP_MODE_Auto; 
+      JNB   _003; 
+      L     L#2; 
+      T     "HW".C8_FP_MODE; 
+_003: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "I".C8_FISH_COUNTER; 
+      FP    "FishCountEdgeDetect"; 
+      JNB   _004; 
+      L     "HW".C8_FISH_COUNTER; 
+      L     L#1; 
+      +D    ; 
+      T     "HW".C8_FISH_COUNTER; 
+_004: NOP   0; 
+NETWORK
+TITLE =
+
+      A     "HB".C8_Step09; 
+      FN    "FPCountEdgeDetect"; 
+      JNB   _005; 
+      L     "HW".C8_FP_COUNTER; 
+      L     L#1; 
+      +D    ; 
+      T     "HW".C8_FP_COUNTER; 
+_005: NOP   0; 
+NETWORK
+TITLE =Fish Pass Fish Counter Reset
+
+      A     "HB".C8_FISH_COUNTER_RS; 
+      =     L      0.0; 
+      A     L      0.0; 
+      JNB   _006; 
+      L     L#0; 
+      T     "HW".C8_FISH_COUNTER; 
+      SET   ; 
+      SAVE  ; 
+      CLR   ; 
+_006: A     BR; 
+      R     "HB".C8_FISH_COUNTER_RS; 
+      A     L      0.0; 
+      JNB   _007; 
+      L     L#0; 
+      T     "HW".C8_FP_COUNTER; 
+_007: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      O     "I".C8_FPWG_MANMODE; 
+      O     "I".C8_FPLOG1_MANMODE; 
+      O     "I".C8_FPLOG2_MANMODE; 
+      O     "I".C8_FPINTAKE_MANMODE; 
+      )     ; 
+      JNB   _008; 
+      L     L#1; 
+      T     "HW".C8_FP_MODE; 
+_008: NOP   0; 
+NETWORK
+TITLE =
+
+      A(    ; 
+      AN    "I".C8_FPWG_MANMODE; 
+      AN    "I".C8_FPWG_AUTOMODE; 
+      O     ; 
+      AN    "I".C8_FPLOG1_MANMODE; 
+      AN    "I".C8_FPLOG1_AUTOMODE; 
+      O     ; 
+      AN    "I".C8_FPLOG2_MANMODE; 
+      AN    "I".C8_FPLOG2_AUTOMODE; 
+      O     ; 
+      AN    "I".C8_FPINTAKE_MANMODE; 
+      AN    "I".C8_FPINTAKE_AUTOMODE; 
+      )     ; 
+      JNB   _009; 
+      L     L#0; 
+      T     "HW".C8_FP_MODE; 
+_009: NOP   0; 
+END_FUNCTION
+
+FUNCTION "MODES" : VOID
+TITLE =
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =Fish Pass Operating Mode Manual
+
+      L     "HW".C8_FP_MODE; 
+      L     L#1; 
+      ==D   ; 
+      =     "HB".C8_FP_MODE_Man; 
+NETWORK
+TITLE =Fish Pass Operating Mode Auto
+
+      L     "HW".C8_FP_MODE; 
+      L     L#2; 
+      ==D   ; 
+      =     "HB".C8_FP_MODE_Auto; 
+END_FUNCTION
+
+FUNCTION "DBQ TO Q" : VOID
+TITLE =WRITING OUTPUTS
+NAME : DBQTOQ
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =
+// MAPPING THE DATA BLOCK OF OUTPUTS FROM PROGRAM 
+// TO THE REAL OUTPUTS
+      A     "SysSimulation"; 
+      JC    safe; 
+
+      L     DB106.DBD    4; 
+      T     QD     4; 
+
+safe: NOP   0; 
+
+END_FUNCTION
+
+FUNCTION "PeerDataIn" : VOID
+TITLE = 
+NAME : ETHERNT0
+VERSION : 0.0
+
+
+VAR_TEMP
+  Done : BOOL ;	
+  Error : BOOL ;	
+  Status : WORD ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+
+      A     "Pulse0_5"; 
+      =     L      4.0; 
+      BLD   103; 
+      CALL "GET_ENET" , "DB For GET_ENET" (
+           REQ                      := L      4.0,
+           ID                       := W#16#1,
+           NDR                      := #Done,
+           ERROR                    := #Error,
+           STATUS                   := #Status,
+           ADDR_1                   := P#DB178.DBX0.0 BYTE 12,
+           RD_1                     := P#DB178.DBX0.0 BYTE 12);
+      NOP   0; 
+NETWORK
+TITLE =Common Read Unit1 Fail Grace Timer
+
+      A(    ; 
+      L     "DDtoFishPass".RollReg; 
+      L     "HW".DrawdownRollRegLast; 
+      ==D   ; 
+      )     ; 
+      L     S5T#5S; 
+      SD    "CommFail_Tmr"; 
+      NOP   0; 
+      NOP   0; 
+      NOP   0; 
+      A     "CommFail_Tmr"; 
+      =     "HB".DrawdownCommFail; 
+NETWORK
+TITLE =
+
+      L     "DDtoFishPass".RollReg; 
+      T     "HW".DrawdownRollRegLast; 
+      NOP   0; 
+NETWORK
+TITLE =
+
+      L     "DDtoFishPass".HeadraceAve; 
+      T     "HR".C6_HeadRaceLevel; 
+
+
+
+NETWORK
+TITLE =
+
+      L     "DDtoFishPass".TailRaveAve; 
+      T     "HR".C6_TailRaceLevel; 
+END_FUNCTION
+
+DATA_BLOCK "DB For GET_ENET"
+TITLE =
+AUTHOR : SIMATIC
+FAMILY : CPU_300
+VERSION : 0.1
+
+"GET_ENET"
+BEGIN
+   REQ := FALSE; 
+   ID := W#16#1; 
+   NDR := FALSE; 
+   ERROR := FALSE; 
+   STATUS := W#16#0; 
+   ADDR_1 := P#DB178.DBX 0.0 BYTE 12; 
+   RD_1 := P#DB178.DBX 0.0 BYTE 12; 
+   FB_ZUSTAND := B#16#0; 
+   REQ_SAVE := FALSE; 
+   ID_SAVE := W#16#0; 
+   R_ID_SAVE := DW#16#0; 
+   FC_DATA_LEN := W#16#0; 
+   ADDR_1_SAVE0 := W#16#0; 
+   ADDR_1_SAVE2 := W#16#0; 
+   ADDR_1_SAVE4 := W#16#0; 
+   ADDR_1_SAVE6 := W#16#0; 
+   ADDR_1_SAVE8 := W#16#0; 
+   SD_1_SAVE0 := W#16#0; 
+   SD_1_SAVE2 := W#16#0; 
+   SD_1_SAVE4 := W#16#0; 
+   SD_1_SAVE6 := W#16#0; 
+   SD_1_SAVE8 := W#16#0; 
+   HS_REQ_BYTE.rii := FALSE; 
+   HS_REQ_BYTE.nva := FALSE; 
+   HS_REQ_BYTE.ofs := FALSE; 
+   HS_REQ_BYTE.dir := FALSE; 
+   HS_REQ_BYTE.res := FALSE; 
+   HS_REQ_BYTE.roc := FALSE; 
+   HS_REQ_BYTE.nls := FALSE; 
+   HS_REQ_BYTE.rlo := FALSE; 
+   HS_RESP_BYTE.aii := FALSE; 
+   HS_RESP_BYTE.sns := FALSE; 
+   HS_RESP_BYTE.sqc := FALSE; 
+   HS_RESP_BYTE.ads := FALSE; 
+   HS_RESP_BYTE.aoc := FALSE; 
+   HS_RESP_BYTE.rs1 := FALSE; 
+   HS_RESP_BYTE.cnr := FALSE; 
+   HS_RESP_BYTE.rs2 := FALSE; 
+   HS_RESP_DSNR := B#16#0; 
+   HS_RESP_OFFSET := W#16#0; 
+   SD_1_WORD0 := W#16#0; 
+   SD_1_COUNT := W#16#0; 
+   SD_1_DBNUMMER := W#16#0; 
+   SD_1_DWORD6 := DW#16#0; 
+   SD_1_TYP := B#16#0; 
+   SFC_PARAM.LEN := W#16#0; 
+   SFC_PARAM.DB_NUMMER := W#16#0; 
+   SFC_PARAM.START := DW#16#0; 
+   BUFFER[0] := W#16#0; 
+   BUFFER[1] := W#16#0; 
+   BUFFER[2] := W#16#0; 
+   BUFFER[3] := W#16#0; 
+   BUFFER[4] := W#16#0; 
+   BUFFER[5] := W#16#0; 
+   BUFFER[6] := W#16#0; 
+   BUFFER[7] := W#16#0; 
+   BUFFER[8] := W#16#0; 
+   BUFFER[9] := W#16#0; 
+   BUFFER[10] := W#16#0; 
+   BUFFER[11] := W#16#0; 
+   BUFFER[12] := W#16#0; 
+   BUFFER[13] := W#16#0; 
+   BUFFER[14] := W#16#0; 
+   BUFFER[15] := W#16#0; 
+   BUFFER[16] := W#16#0; 
+   BUFFER[17] := W#16#0; 
+   BUFFER[18] := W#16#0; 
+   BUFFER[19] := W#16#0; 
+   BUFFER[20] := W#16#0; 
+   BUFFER[21] := W#16#0; 
+   BUFFER[22] := W#16#0; 
+   BUFFER[23] := W#16#0; 
+   BUFFER[24] := W#16#0; 
+   BUFFER[25] := W#16#0; 
+   BUFFER[26] := W#16#0; 
+   BUFFER[27] := W#16#0; 
+   BUFFER[28] := W#16#0; 
+   BUFFER[29] := W#16#0; 
+   BUFFER[30] := W#16#0; 
+   BUFFER[31] := W#16#0; 
+   BUFFER[32] := W#16#0; 
+   BUFFER[33] := W#16#0; 
+   BUFFER[34] := W#16#0; 
+   BUFFER[35] := W#16#0; 
+   BUFFER[36] := W#16#0; 
+   BUFFER[37] := W#16#0; 
+   BUFFER[38] := W#16#0; 
+   BUFFER[39] := W#16#0; 
+   BUFFER[40] := W#16#0; 
+   BUFFER[41] := W#16#0; 
+   BUFFER[42] := W#16#0; 
+   BUFFER[43] := W#16#0; 
+   BUFFER[44] := W#16#0; 
+   BUFFER[45] := W#16#0; 
+   BUFFER[46] := W#16#0; 
+   BUFFER[47] := W#16#0; 
+   BUFFER[48] := W#16#0; 
+   BUFFER[49] := W#16#0; 
+   BUFFER[50] := W#16#0; 
+   BUFFER[51] := W#16#0; 
+   BUFFER[52] := W#16#0; 
+   BUFFER[53] := W#16#0; 
+   BUFFER[54] := W#16#0; 
+   BUFFER[55] := W#16#0; 
+   BUFFER[56] := W#16#0; 
+   BUFFER[57] := W#16#0; 
+   BUFFER[58] := W#16#0; 
+   BUFFER[59] := W#16#0; 
+   BUFFER[60] := W#16#0; 
+   BUFFER[61] := W#16#0; 
+   BUFFER[62] := W#16#0; 
+   BUFFER[63] := W#16#0; 
+   BUFFER[64] := W#16#0; 
+   BUFFER[65] := W#16#0; 
+   BUFFER[66] := W#16#0; 
+   BUFFER[67] := W#16#0; 
+   BUFFER[68] := W#16#0; 
+   BUFFER[69] := W#16#0; 
+   BUFFER[70] := W#16#0; 
+   BUFFER[71] := W#16#0; 
+   BUFFER[72] := W#16#0; 
+   BUFFER[73] := W#16#0; 
+   BUFFER[74] := W#16#0; 
+   BUFFER[75] := W#16#0; 
+   BUFFER[76] := W#16#0; 
+   BUFFER[77] := W#16#0; 
+   BUFFER[78] := W#16#0; 
+   BUFFER[79] := W#16#0; 
+   BUFFER[80] := W#16#0; 
+   BUFFER[81] := W#16#0; 
+   BUFFER[82] := W#16#0; 
+   BUFFER[83] := W#16#0; 
+   BUFFER[84] := W#16#0; 
+   BUFFER[85] := W#16#0; 
+   BUFFER[86] := W#16#0; 
+   BUFFER[87] := W#16#0; 
+   BUFFER[88] := W#16#0; 
+   BUFFER[89] := W#16#0; 
+   BUFFER[90] := W#16#0; 
+   BUFFER[91] := W#16#0; 
+   BUFFER[92] := W#16#0; 
+   BUFFER[93] := W#16#0; 
+   BUFFER[94] := W#16#0; 
+   BUFFER[95] := W#16#0; 
+   BUFFER[96] := W#16#0; 
+   BUFFER[97] := W#16#0; 
+   BUFFER[98] := W#16#0; 
+   BUFFER[99] := W#16#0; 
+   BUFFER[100] := W#16#0; 
+   BUFFER[101] := W#16#0; 
+   BUFFER[102] := W#16#0; 
+   BUFFER[103] := W#16#0; 
+   BUFFER[104] := W#16#0; 
+   BUFFER[105] := W#16#0; 
+   BUFFER[106] := W#16#0; 
+   BUFFER[107] := W#16#0; 
+   BUFFER[108] := W#16#0; 
+   BUFFER[109] := W#16#0; 
+   BUFFER[110] := W#16#0; 
+   BUFFER[111] := W#16#0; 
+   BUFFER[112] := W#16#0; 
+   BUFFER[113] := W#16#0; 
+   BUFFER[114] := W#16#0; 
+   BUFFER[115] := W#16#0; 
+   BUFFER[116] := W#16#0; 
+   BUFFER[117] := W#16#0; 
+   BUFFER[118] := W#16#0; 
+   BUFFER[119] := W#16#0; 
+   REASON_FOR_CLOSE := B#16#0; 
+   MAX_PUFF_LEN_SAVE := W#16#0; 
+   TYP_BOOL := FALSE; 
+   KANAL_PROBLEM := FALSE; 
+   KOMM_PROBLEM := FALSE; 
+   LADDR_PTR := DW#16#0; 
+   LADDR := W#16#0; 
+   DS_NR := B#16#0; 
+   PARAM_OFFSET := DW#16#0; 
+   SLEEP := B#16#0; 
+   SLEEP_EXT := B#16#0; 
+   ID_CLOSE := W#16#0; 
+   FB_KENNUNG := B#16#F6; 
+   RESERVE := B#16#0; 
+   ZUSTAND_WEICHE := B#16#2; 
+   SFB_AUFRUF.REQ := FALSE; 
+   SFB_AUFRUF.ID := W#16#1; 
+   SFB_AUFRUF.NDR := FALSE; 
+   SFB_AUFRUF.ERROR := FALSE; 
+   SFB_AUFRUF.STATUS := W#16#0; 
+   SFB_AUFRUF.ADDR_1 := P#DB178.DBX 0.0 BYTE 12; 
+   SFB_AUFRUF.RD_1 := P#DB178.DBX 0.0 BYTE 12; 
+   SFB_AUFRUF.INDEX := W#16#1; 
+   ZUSTAND_WEICHE_1 := B#16#CA; 
+END_DATA_BLOCK
+
+ORGANIZATION_BLOCK "MAIN"
+TITLE =MAIN PROGRAM
+NAME : MAIN
+VERSION : 0.0
+
+
+VAR_TEMP
+  OB1_EV_CLASS : BYTE ;	//Bits 0-3 = 1 (Coming event), Bits 4-7 = 1 (Event class 1)
+  OB1_SCAN_1 : BYTE ;	//1 (Cold restart scan 1 of OB 1), 3 (Scan 2-n of OB 1)
+  OB1_PRIORITY : BYTE ;	//1 (Priority of 1 is lowest)
+  OB1_OB_NUMBR : BYTE ;	//1 (Organization block 1, OB1)
+  OB1_RESERVED_1 : BYTE ;	//Reserved for system
+  OB1_RESERVED_2 : BYTE ;	//Reserved for system
+  OB1_PREV_CYCLE : INT ;	//Cycle time of previous OB1 scan (milliseconds)
+  OB1_MIN_CYCLE : INT ;	//Minimum cycle time of OB1 (milliseconds)
+  OB1_MAX_CYCLE : INT ;	//Maximum cycle time of OB1 (milliseconds)
+  OB1_DATE_TIME : DATE_AND_TIME ;	//Date and time OB1 started
+END_VAR
+BEGIN
+NETWORK
+TITLE =ONLY fOR SIMULATION
+
+      A     "SysSimulation"; 
+//     R     M     20.0
+NETWORK
+TITLE =
+//
+//
+      CALL "PLC OVERHEADS" ;
+
+
+      CALL "I TO DBI" ;
+      CALL "ANALOG INPUTS" ;
+
+      CALL "PeerDataIn" ;
+
+      CALL "Background Processes" ;
+
+      CALL "MAIN SEQUENCE" ;
+      CALL "TRANSITIONS" ;
+
+      CALL "Lower Gates" ;
+      CALL "Weir Gate" ;
+
+      CALL "MODES" ;
+
+      CALL "DBQ TO Q" ;
+
+NETWORK
+TITLE =Module Access Error
+
+      A     "OB122_Flag"; 
+      L     S5T#10S; 
+      SF    "OB122Tmr"; 
+      A     "OB122Tmr"; 
+      =     "HB".C8_OB122_ERROR; 
+
+      A     "AlwaysOff"; 
+      =     "OB122_Flag"; 
+NETWORK
+TITLE =Program Error
+
+      A     "OB121_Flag"; 
+      L     S5T#10S; 
+      SF    "OB121Tmr"; 
+      A     "OB121Tmr"; 
+      =     "HB".C8_OB121_ERROR; 
+
+      A     "AlwaysOff"; 
+      =     "OB121_Flag"; 
+NETWORK
+TITLE =OB Error
+
+      A     "OB85_Flag"; 
+      L     S5T#10S; 
+      SF    "OB85Tmr"; 
+      A     "OB85Tmr"; 
+      =     "HB".C8_OB85_ERROR; 
+
+      A     "AlwaysOff"; 
+      =     "OB85_Flag"; 
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "CYC_INT5"
+TITLE = "Cyclic Interrupt"
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB35_EV_CLASS : BYTE ;	//Bits 0-3 = 1 (Coming event), Bits 4-7 = 1 (Event class 1)
+  OB35_STRT_INF : BYTE ;	//16#36 (OB 35 has started)
+  OB35_PRIORITY : BYTE ;	//Priority of OB Execution
+  OB35_OB_NUMBR : BYTE ;	//35 (Organization block 35, OB35)
+  OB35_RESERVED_1 : BYTE ;	//Reserved for system
+  OB35_RESERVED_2 : BYTE ;	//Reserved for system
+  OB35_PHASE_OFFSET : WORD ;	//Phase offset (msec)
+  OB35_RESERVED_3 : INT ;	//Reserved for system
+  OB35_EXC_FREQ : INT ;	//Frequency of execution (msec)
+  OB35_DATE_TIME : DATE_AND_TIME ;	//Date and time OB35 started
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+
+
+
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "DIAGNOSTIC INTERUPT"
+TITLE = "I/O Point Fault"
+NAME : DIAGINT
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB82_EV_CLASS : BYTE ;	//16#39, Event class 3, Entering event state, Internal fault event
+  OB82_FLT_ID : BYTE ;	//16#XX, Fault identifcation code
+  OB82_PRIORITY : BYTE ;	//Priority of OB Execution
+  OB82_OB_NUMBR : BYTE ;	//82 (Organization block 82, OB82)
+  OB82_RESERVED_1 : BYTE ;	//Reserved for system
+  OB82_IO_FLAG : BYTE ;	//Input (01010100), Output (01010101)
+  OB82_MDL_ADDR : WORD ;	//Base address of module with fault
+  OB82_MDL_DEFECT : BOOL ;	//Module defective
+  OB82_INT_FAULT : BOOL ;	//Internal fault
+  OB82_EXT_FAULT : BOOL ;	//External fault
+  OB82_PNT_INFO : BOOL ;	//Point information
+  OB82_EXT_VOLTAGE : BOOL ;	//External voltage low
+  OB82_FLD_CONNCTR : BOOL ;	//Field wiring connector missing
+  OB82_NO_CONFIG : BOOL ;	//Module has no configuration data
+  OB82_CONFIG_ERR : BOOL ;	//Module has configuration error
+  OB82_MDL_TYPE : BYTE ;	//Type of module
+  OB82_SUB_MDL_ERR : BOOL ;	//Sub-Module is missing or has error
+  OB82_COMM_FAULT : BOOL ;	//Communication fault
+  OB82_MDL_STOP : BOOL ;	//Module is stopped
+  OB82_WTCH_DOG_FLT : BOOL ;	//Watch dog timer stopped module
+  OB82_INT_PS_FLT : BOOL ;	//Internal power supply fault
+  OB82_PRIM_BATT_FLT : BOOL ;	//Primary battery is in fault
+  OB82_BCKUP_BATT_FLT : BOOL ;	//Backup battery is in fault
+  OB82_RESERVED_2 : BOOL ;	//Reserved for system
+  OB82_RACK_FLT : BOOL ;	//Rack fault, only for bus interface module
+  OB82_PROC_FLT : BOOL ;	//Processor fault
+  OB82_EPROM_FLT : BOOL ;	//EPROM fault
+  OB82_RAM_FLT : BOOL ;	//RAM fault
+  OB82_ADU_FLT : BOOL ;	//ADU fault
+  OB82_FUSE_FLT : BOOL ;	//Fuse fault
+  OB82_HW_INTR_FLT : BOOL ;	//Hardware interupt input in fault
+  OB82_RESERVED_3 : BOOL ;	//Reserved for system  
+  OB82_DATE_TIME : DATE_AND_TIME ;	//Date and time OB82 started   
+  OB82_Output_Interupt : BOOL ;	
+  Read_DP_Status_Request : BOOL ;	
+  Read_DP_Status_Busy : BOOL ;	
+  DP_Address_Fault : WORD ;	
+  DP_Fault_Ret_Val : INT ;	
+  SSL_HEADER : STRUCT 	
+   LENTHDR : WORD ;	
+   N_DR : WORD ;	
+  END_STRUCT ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =Read diagnostic of the fault module
+//Reading Diagnostics is continually done in FC70.
+      SET   ; 
+      =     #Read_DP_Status_Request; 
+      R     #OB82_Output_Interupt; 
+
+      CLR   ; 
+      =     #Read_DP_Status_Request; 
+NETWORK
+TITLE =
+//Module Dignostics are done in FC70 to ensure continuously checked.
+
+
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "I/O_FLT2"
+TITLE =Insert / Remove Module Interrupt Organization Block
+NAME : IOFLT
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB83_EV_CLASS : BYTE ;	//16#38/39, Event class 3, module inserted/removed (8/9)
+  OB83_FLT_ID : BYTE ;	//16#XX, Fault identifcation code
+  OB83_PRIORITY : BYTE ;	//Priority of OB Execution
+  OB83_OB_NUMBR : BYTE ;	//83 (Organization block 83, OB83)
+  OB83_RESERVED_1 : BYTE ;	//Reserved for system
+  OB83_MDL_ID : BYTE ;	//Input module (01010100), Output module (01010101)
+  OB83_MDL_ADDR : WORD ;	//Base address of module with point fault
+  OB83_RACK_NUM : INT ;	//Number of rack that has module with point fault
+  OB83_MDL_TYPE : WORD ;	//Module type with point fault
+  OB83_DATE_TIME : DATE_AND_TIME ;	//Date and time OB83 started   
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//WHEN A MODULE IS REMOVED OR INSERTED, OB83 IS CALLED
+//THIS OB DO NOT GENERATE CODE, BUT THE DEFAULT WILL BE GENERATE IN OB 82 (CALLED 
+//WHEN A DIAGNOSTIC OF A MODULE CHANGE)
+
+
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "OBNL_FLT"
+TITLE = "Organization Block (OB) Not Loaded Fault"
+NAME : OBNLFLT
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB85_EV_CLASS : BYTE ;	//16#35 Event class 3
+  OB85_FLT_ID : BYTE ;	//16#XX, Fault identification code
+  OB85_PRIORITY : BYTE ;	//Priority of OB Execution
+  OB85_OB_NUMBR : BYTE ;	//85 (Organization block 85, OB85)
+  OB85_RESERVED_1 : BYTE ;	//Reserved for system
+  OB85_RESERVED_2 : BYTE ;	//Reserved for system
+  OB85_RESERVED_3 : INT ;	//Reserved for system
+  OB85_ERR_EV_CLASS : BYTE ;	//Class of event causing error
+  OB85_ERR_EV_NUM : BYTE ;	//Number of event causing error
+  OB85_OB_PRIOR : BYTE ;	//Priority of OB causing error
+  OB85_OB_NUM : BYTE ;	//Number of OB causing error
+  OB85_DATE_TIME : DATE_AND_TIME ;	//Date and time OB85 started   
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+
+      SET   ; 
+      =     "OB85_Flag"; 
+      CLR   ; 
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "RACK FAILURE"
+TITLE = "Loss Of Rack Fault"
+NAME : RACKFAIL
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB86_EV_CLASS : BYTE ;	//16#38/39 Event class 3
+  OB86_FLT_ID : BYTE ;	//16#C1/C4/C5, Fault identification code
+  OB86_PRIORITY : BYTE ;	//26/28 (Priority of 1 is lowest)
+  OB86_OB_NUMBR : BYTE ;	//86 (Organization block 86, OB86)
+  OB86_RESERVED_1 : BYTE ;	//Reserved for system
+  OB86_RESERVED_2 : BYTE ;	//Reserved for system
+  OB86_MDL_ADDR : WORD ;	//Depending on fault identification code
+  OB86_Z23 : DWORD ;	
+  OB86_DATE_TIME : DATE_AND_TIME ;	//Date and time OB86 started
+  Outgoing : BOOL ;	//Error is class 38
+  Incoming : BOOL ;	//Error is class 39
+  ErrorMaster : BOOL ;	//DP-Master System Failure
+  ErrorSlave : BOOL ;	//DP-Slave Station Failure
+  DPStationNo : INT ;	//Dp Info
+  DPMasterSystemID : INT ;	//Dp Info
+  BaseAddrSlave : INT ;	//Dp Info
+  ErrorDP2 : BOOL ;	//Error DP Master
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//Event class and identifiers:
+//oB#16#38: outgoing event
+//oB#16#39: incoming event
+//
+//OB86_EV_CLASS = B#16#39
+//OB86_FLT_ID   = B#16#C3
+//
+//Meaning:
+//Distributed I/O devices: failure of a DP master system
+//Only incoming event causes the start of OB 86, with error code B#16#C3.
+//An outgoing event starts OB 86 with error code B#16#C4 and event class B#16#38:
+//The return of every DP slave station starts OB86
+//oOB86_MDL_ADDR: Logical base address of the DP master 
+//oOB86_Z23: DP master ID:
+//     -Bit 0 to 7: Reserved
+//     -Bit 8 to 15: DP master system ID
+//     -Bit 16 to 31: Reserved
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//OB86_EV_CLASS = B#16#38/39
+//OB86_FLT_ID   = B#16#C4
+//
+//Meaning:Failure of a DP station
+//oOB86_MDL_ADDR: Logical base address of the DP master 
+//oOB86_Z23: Address of the affected DP slave: 
+//   -Bit 0 to 7: No. of the DP station
+//   -Bit 8 to 15: DP master system ID
+//   -Bit 16 to 30: logical base address of an S7 slave or diagnostic address  
+//        of a standard DP slave
+//   -Bit 31: I/O identifier
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++
+//
+// Error
+
+
+NETWORK
+TITLE =Define Incomming or Outgoing Events
+
+      L     #OB86_EV_CLASS; // Is class = #38
+      L     B#16#38; 
+      ==I   ; 
+      =     #Outgoing; 
+      JC    NXT1; 
+
+      L     #OB86_EV_CLASS; // Is class = #39
+      L     B#16#39; 
+      ==I   ; 
+      =     #Incoming; 
+
+NXT1: NOP   0; 
+NETWORK
+TITLE =INCOMING EVENTS MASTER OR SLAVE
+
+      L     #OB86_FLT_ID; // Fault ID
+      L     B#16#C3; 
+      ==I   ; 
+      A     #Incoming; 
+      =     #ErrorMaster; 
+      JC    NXT2; 
+
+      L     #OB86_FLT_ID; // Fault ID
+      L     B#16#C4; 
+      ==I   ; 
+      A     #Incoming; 
+      AN    #Outgoing; 
+      =     #ErrorSlave; 
+
+NXT2: NOP   0; 
+
+NETWORK
+TITLE =FOUND ADDRESS AND ID OF DP STATION FAULT
+
+      L     #OB86_Z23; // -Bit 0 to 7: No. of the DP station
+      L     DW#16#F; 
+      AW    ; 
+      T     #DPStationNo; 
+
+      L     #OB86_Z23; //-Bit 8 to 15: DP master system ID
+      L     DW#16#F0; 
+      AW    ; 
+      SRD   8; 
+      T     #DPMasterSystemID; 
+
+      L     #OB86_Z23; //logical base address of an S7 slave
+      L     DW#16#EF00; 
+      AW    ; 
+      SRD   16; 
+      T     #BaseAddrSlave; 
+NETWORK
+TITLE =SET AND RESET MASTER DP ALARMS
+// +++++++++ DP Master 1 ++++++++++
+      L     #OB86_MDL_ADDR; // DP Master
+      L     W#16#7F9; 
+      ==I   ; 
+      A     #ErrorMaster; 
+//     =     "RACK FAULT ALARMS".MasterDP1
+
+// +++++++++ DP Master 2 ++++++++++
+
+      L     #OB86_MDL_ADDR; // DP Master CP
+      L     W#16#180; 
+      ==I   ; 
+      A     #ErrorMaster; 
+//     =     "RACK FAULT ALARMS".CPU_Slot5
+
+
+NETWORK
+TITLE =SET AND RESET SLAVE DP ALARMS
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++
+//
+// Error Slave No 
+      L     #DPStationNo; 
+      L     2; // Slave No
+      ==I   ; 
+      JCN   SL3; 
+      A     #ErrorSlave; 
+//      =     "RACK FAULT ALARMS".Bus1_SlaveDP2
+
+SL3:  L     #DPStationNo; 
+      L     3; // Slave No
+      ==I   ; 
+      JCN   SL4; 
+      A     #ErrorSlave; 
+//      =     "RACK FAULT ALARMS".Bus1_SlaveDP3
+
+SL4:  L     #DPStationNo; 
+      L     4; // Slave No
+      ==I   ; 
+      JCN   SL5; 
+      A     #ErrorSlave; 
+//      =     "RACK FAULT ALARMS".Bus1_SlaveDP4
+
+SL5:  L     #DPStationNo; 
+      L     5; // Slave No
+      ==I   ; 
+      JCN   SL6; 
+      A     #ErrorSlave; 
+//      =     "RACK FAULT ALARMS".Bus1_SlaveDP5
+
+SL6:  L     #DPStationNo; 
+      L     6; // Slave No
+      ==I   ; 
+      JCN   END; 
+      A     #ErrorSlave; 
+//      =     "RACK FAULT ALARMS".Bus1_SlaveDP6
+
+END:  NOP   0; 
+
+
+
+
+
+
+
+
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "WARM RESTART"
+TITLE =Warm Restart
+//
+NAME : WARMRES
+VERSION : 0.0
+
+
+VAR_TEMP
+  OB100_EV_CLASS : BYTE ;	//16#13, Event class 1, Entering event state, Event logged in diagnostic buffer
+  OB100_STRTUP : BYTE ;	//16#81/82/83/84 Method of startup
+  OB100_PRIORITY : BYTE ;	//27 (Priority of 1 is lowest)
+  OB100_OB_NUMBR : BYTE ;	//100 (Organization block 100, OB100)
+  OB100_RESERVED_1 : BYTE ;	//Reserved for system
+  OB100_RESERVED_2 : BYTE ;	//Reserved for system
+  OB100_STOP : WORD ;	//Event that caused CPU to stop (16#4xxx)
+  OB100_STRT_INFO : DWORD ;	//Information on how system started
+  OB100_DATE_TIME : DATE_AND_TIME ;	//Date and time OB100 started
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+
+
+
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "PROG_ERR"
+TITLE = "Programming Error"
+NAME : PROGERR
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB121_EV_CLASS : BYTE ;	//16#25, Event class 2, Entering event state, Internal fault event
+  OB121_SW_FLT : BYTE ;	//16#XX Software programming fault
+  OB121_PRIORITY : BYTE ;	//Priority of OB Execution
+  OB121_OB_NUMBR : BYTE ;	//121 (Organization block 121, OB121)
+  OB121_BLK_TYPE : BYTE ;	//16#88/8A/8B/8C/8E Type of block fault occured in
+  OB121_RESERVED_1 : BYTE ;	//Reserved for system
+  OB121_FLT_REG : WORD ;	//16#XX Specific register that caused fault
+  OB121_BLK_NUM : WORD ;	//Number of block that programming fault occured in
+  OB121_PRG_ADDR : WORD ;	//Address in block where programming fault occured
+  OB121_DATE_TIME : DATE_AND_TIME ;	//Date and time OB121 started
+END_VAR
+BEGIN
+NETWORK
+TITLE =Toggle when OB121 Called
+
+      SET   ; 
+      =     "OB121_Flag"; 
+      CLR   ; 
+
+END_ORGANIZATION_BLOCK
+
+ORGANIZATION_BLOCK "MOD_ERR"
+TITLE = "Module Access Error"
+VERSION : 0.1
+
+
+VAR_TEMP
+  OB122_EV_CLASS : BYTE ;	//16#29, Event class 2, Entering event state, Internal fault event
+  OB122_SW_FLT : BYTE ;	//16#XX Software error code
+  OB122_PRIORITY : BYTE ;	//Priority of OB Execution
+  OB122_OB_NUMBR : BYTE ;	//122 (Organization block 122, OB122)
+  OB122_BLK_TYPE : BYTE ;	//16#88/8C/8E Type of block fault occured in
+  OB122_MEM_AREA : BYTE ;	//Memory area where access error occured
+  OB122_MEM_ADDR : WORD ;	//Memory address where access error occured
+  OB122_BLK_NUM : WORD ;	//Block number in which error occured
+  OB122_PRG_ADDR : WORD ;	//Program address where error occured
+  OB122_DATE_TIME : DATE_AND_TIME ;	//Date and time OB1 started
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+
+
+
+END_ORGANIZATION_BLOCK
+
