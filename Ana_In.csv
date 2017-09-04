@@ -71,7 +71,7 @@ Dev No.,Tag No.,Description,Eng. Range,,Units,I/O Address txt description,PLC Ad
 58,LT1-1807,VAT 70-1 LEVEL TRANSMITTER,0,40000,L,Bartec Remote IO DP Network 1 Node 19 Analog Input 2,AI[58],,655,1638,3276,1062,,1062,0,OK,,,,
 59,LT1-1808,VAT 70-2 LEVEL TRANSMITTER,0,39500,L,Bartec Remote IO DP Network 1 Node 19 Analog Input 3,AI[59],,655,1638,3276,1064,,1064,0,OK,,,,
 60,FT1-1815,VAT 80/81 DELIVERY FLOWRATE,0,50000,l/hr,Bartec Remote IO DP Network 1 Node 19 Analog Input 4,AI[60],,655,1638,3276,1066,,1066,0,OK,,,,
-61,LT1-1826,VAT 80 LEVEL TRANSMITTER,0,40000,L,Bartec Remote IO DP Network 1 Node 19 Analog Input 5,AI[61],,655,1638,3276,1068,,1068,0,OK,,,,
+61,ANA123,VAT 80 LEVEL TRANSMITTER,0,40000,L,Bartec Remote IO DP Network 1 Node 19 Analog Input 5,AI[61],,655,1638,3276,1068,,1068,0,OK,,,,
 62,LT1-1828,VAT 81 LEVEL TRANSMITTER,0,39000,L,Bartec Remote IO DP Network 1 Node 19 Analog Input 6,AI[62],,655,1638,3276,1070,,1070,0,OK,,,,
 63,FT1-1833,RO WATER FLOWRATE,0,10000,l/hr,Bartec Remote IO DP Network 1 Node 19 Analog Input 7,AI[63],,655,1638,3276,1072,,1072,0,OK,,,,
 64,TT1-1839,CHILLER PRODUCT INLET TEMPERATURE,-10,100,°C,Bartec Remote IO DP Network 1 Node 19 Analog Input 8,AI[64],,655,1638,3276,1074,,1074,0,OK,,,,
@@ -107,7 +107,4 @@ Dev No.,Tag No.,Description,Eng. Range,,Units,I/O Address txt description,PLC Ad
 94,LT2110,VAT 69 Level Transmitter,0,40000,L,Bartec Remote IO DP Network 1 Node 20 Analog Input 5,AI[94],,655,1638,3276,1084,,1084,0,OK,,,,
 95,FT2191,Tanker Intake 2 Flow Meter,0,40000,L,IM152 DP Network 3 Node 8 Slot 13 ANALOGUE Input 1,AI[95],,655,1638,3276,520,,1084,-564,Mismatch,,,,
 96,FT2102,RANGE?,0,40000,L,IM153 DP Network 2 Node 44 Slot 7 Analog Input 5,AI[96],,655,1638,3276,644,,1084,-440,Mismatch,,,,
-97,Test01,Test,0,100,%,asd,AI[97],,655,1638,3276,0,,709,-709,Mismatch,,,,
-98,Test02,test,0,100,%,asd,AI[98],,655,1638,3276,0,,709,-709,Mismatch,,,,
-99,Test03,Test,0,100,%,asd,AI[99],,655,1638,3276,0,,709,-709,Mismatch,,,,
-100,Test04,Test,0,100,%,asd,AI[100],,655,1638,3276,0,,709,-709,Mismatch,,,,
+
