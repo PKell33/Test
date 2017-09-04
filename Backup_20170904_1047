@@ -8,11 +8,8 @@ VERSION : 0.1
    IW128 : BOOL ;	//Spare Wire Break
    C8_WBFPLVL : BOOL ;	//Fish Pass Water Level in the top 10m of the Fish Pass Wire Break
    C8_WBFPWG_POS : BOOL ;	//Fish Pass Weir Gate Position for Angular Transmitter Wire Break
-   IW134 : BOOL ;	//Spare Wire Break Change 1
-   IW136 : BOOL ;	//Spare Wire Break Change 2
-   IW138 : BOOL ;	//Spare Wire Break Change 3
-   IW140 : BOOL ;	//Spare Wire Break Change 4
-   IW142 : BOOL ;	//Spare Wire Break Change 5
+	<DeleteStart>
+	<DeleteEnd>
   END_STRUCT ;	
 BEGIN
    IW128 := FALSE; 
