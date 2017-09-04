@@ -23,6 +23,7 @@ BEGIN
    IW136 := TRUE; 
    IW138 := TRUE; 
    IW140 := TRUE; 
+   Add010101
    IW142 := TRUE; 
 END_DATA_BLOCK
 
@@ -36,11 +37,7 @@ VERSION : 0.1
    IW128 : BOOL ;	//Spare Over Range
    C8_ORFPLVL : BOOL ;	//Fish Pass Water Level in the top 10m of the Fish Pass Over Range
    C8_ORFPWG_POS : BOOL ;	//Fish Pass Weir Gate Position for Angular Transmitter Over Range
-   IW134 : BOOL ;	//Spare Over Range
-   IW136 : BOOL ;	//Spare Over Range
-   IW138 : BOOL ;	//Spare Over Range
-   IW140 : BOOL ;	//Spare Over Range
-   IW142 : BOOL ;	//Spare Over Range
+
   END_STRUCT ;	
 BEGIN
    IW128 := TRUE; 
